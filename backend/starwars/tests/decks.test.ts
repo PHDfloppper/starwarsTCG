@@ -123,6 +123,12 @@ describe('Tests des routes /api/decks', () => {
         expect(res.body.decks.length).toBeGreaterThanOrEqual(1);
     });
 
+    it('GET /api/decks/:id - devrait retourner le deck selon l id', async () => {
+        const res = await request(app).get(`/api/decks/${idDeckCreee}`);
+        expect(res.status).toBe(200);
+        expect(res.body.decks._id).toContain(idDeckCreee);
+    });
+
     it('PUT /api/parties/modifier/:id - devrait modifier un deck existant', async () => {
         const res = await request(app)
             .put(`/api/decks/modifier/${idDeckCreee}`)

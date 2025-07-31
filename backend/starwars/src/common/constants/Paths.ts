@@ -15,6 +15,7 @@ export default {
   Decks: {
     Base: '/decks',
     Get: '/all',
+    GetId: '/:id',
     Post: '/ajouter',
     Put: '/modifier/:id',
     Delete: '/supprimer/:id',
@@ -22,6 +23,7 @@ export default {
   Parties: {
     Base: '/parties',
     Get: '/all',
+    GetId: '/:id',
     Post: '/ajouter',
     Put: '/modifier/:id',
     Delete: '/supprimer/:id',
@@ -29,6 +31,7 @@ export default {
   Utilisateurs: {
     Base: '/utilisateurs',
     Get: '/all',
+    GetId: '/:id',
     Post: '/ajouter',
     VerifMdp: '/verifMdp',
     Delete: '/supprimer/:id',

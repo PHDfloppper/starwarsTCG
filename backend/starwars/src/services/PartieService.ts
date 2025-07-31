@@ -8,6 +8,10 @@ function obtenirTout(): Promise<IPartie[]> {
   return PartieRepo.obtenirTout();
 }
 
+function chercherParId(id:string): Promise<IPartie> {
+  return PartieRepo.chercherParId(id);
+}
+
 function ajouter(partie: IPartie): Promise<IPartie> {
   return PartieRepo.ajouter(partie);
 }
@@ -24,6 +28,7 @@ async function supprimer(id: string): Promise<{ message: string }> {
 
 export default {
   obtenirTout,
+  chercherParId,
   ajouter,
   modifier,
   supprimer,

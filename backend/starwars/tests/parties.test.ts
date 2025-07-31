@@ -80,6 +80,12 @@ describe('Tests des routes /api/parties', () => {
         expect(res.body.parties.length).toBeGreaterThanOrEqual(1);
     });
 
+    it('GET /api/parties/:id - devrait retourner la partie selon l id', async () => {
+        const res = await request(app).get(`/api/parties/${idPartieCreee}`);
+        expect(res.status).toBe(200);
+        expect(res.body.parties._id).toContain(idPartieCreee);
+    });
+
     it('PUT /api/parties/modifier/:id - devrait modifier une partie existante', async () => {
         const nouvellePartie = {
             datePartie: "2025-07-29T15:00:00.000Z",

@@ -32,7 +32,7 @@ const ModifDeck: React.FC = () => {
     const [message, setMessage] = useState('');
     const naviguer = useNavigate();
     const [erreur, setErreur] = useState<string | null>(null);
-    const [decks, setDecks] = useState<Deck[]>([]);
+    const [deck, setDeck] = useState<Deck>();
 
     const ajouterCarte = () => {
         if (numeroCarte <= 0 || quantiteCarte <= 0) return;
@@ -80,8 +80,8 @@ const ModifDeck: React.FC = () => {
     useEffect(() => {
         const fetchDecks = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/api/decks/all');
-                setDecks(response.data.decks);
+                const response = await axios.get(`http://localhost:3000/api/decks/${iddeck}`);
+                setDeck(response.data.decks);
             } catch (err) {
                 setErreur('Erreur lors de la récupération des decks.');
                 console.error(err);
@@ -92,21 +92,18 @@ const ModifDeck: React.FC = () => {
     }, []);
 
     useEffect(() => {
-        if (decks.length > 0) {
-            const deckTrouve = decks.find((deck_) => deck_._id === iddeck);
-            if (deckTrouve) {
-                setNom(deckTrouve.nom);
-                setDescription(deckTrouve.description);
-                setLeader(deckTrouve.leader);
-                setBase(deckTrouve.base);
-                setCreateur(deckTrouve.createur);
-                setVictoires(deckTrouve.victoires);
-                setCartes(deckTrouve.cartes);
-            }
 
-            if (!deckTrouve) setErreur('Deck non trouvé');
+        if (deck) {
+            setNom(deck.nom);
+            setDescription(deck.description);
+            setLeader(deck.leader);
+            setBase(deck.base);
+            setCreateur(deck.createur);
+            setVictoires(deck.victoires);
+            setCartes(deck.cartes);
         }
-    }, [decks, iddeck]);
+
+    }, [deck, iddeck]);
 
     return (
         <div className="ajout-deck-container">
@@ -169,7 +166,7 @@ const ModifDeck: React.FC = () => {
                 )}
 
                 <hr />
-                <button type="submit">Ajouter le deck</button>
+                <button type="submit">Modifier le deck</button>
             </form>
             {message && <p>{message}</p>}
             {erreur && <p>{erreur}</p>}

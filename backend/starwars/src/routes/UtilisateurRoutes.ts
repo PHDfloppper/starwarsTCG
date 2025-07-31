@@ -6,9 +6,15 @@ import { IReq, IRes } from '../common/util/misc';
 
 const SALT_ROUNDS = 10; //source pour bcrypt: https://www.npmjs.com/package/bcrypt
 
-async function obtenirTout(_: IReq, res: IRes) {
+async function obtenirTout(req: IReq, res: IRes) {
   const utilisateurs = await UtilisateurService.obtenirTout();
   return res.status(HttpStatusCodes.OK).json({ utilisateurs });
+}
+
+async function chercherParId(req: IReq, res: IRes) {
+  const id = req.params.id;
+  const utilisateur = await UtilisateurService.chercherParId(id);
+  return res.status(HttpStatusCodes.OK).json({ utilisateur });
 }
 
 async function ajouter(req: IReq<{ utilisateur: IUtilisateur }>, res: IRes) {
@@ -56,6 +62,7 @@ async function supprimer(req: IReq, res: IRes) {
 
 export default {
   obtenirTout,
+  chercherParId,
   ajouter,
   verifierMdp,
   supprimer,

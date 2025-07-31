@@ -22,7 +22,6 @@ type Deck = {
 
 const DetailsDeck: React.FC = () => {
     const { iddeck } = useParams<{ iddeck: string }>();
-    const [decks, setDecks] = useState<Deck[]>([]);
     const [deck, setDeck] = useState<Deck>();
     const [erreur, setErreur] = useState<string | null>(null);
     const naviguer = useNavigate();
@@ -30,8 +29,8 @@ const DetailsDeck: React.FC = () => {
     useEffect(() => {
         const fetchDecks = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/api/decks/all');
-                setDecks(response.data.decks);
+                const response = await axios.get(`http://localhost:3000/api/decks/${iddeck}`);
+                setDeck(response.data.decks);
             } catch (err) {
                 setErreur('Erreur lors de la récupération des decks.');
                 console.error(err);
@@ -40,14 +39,6 @@ const DetailsDeck: React.FC = () => {
 
         fetchDecks();
     }, []);
-
-    useEffect(() => {
-        if (decks.length > 0) {
-            const deckTrouve = decks.find((deck_) => deck_._id === iddeck);
-            setDeck(deckTrouve);
-            if (!deckTrouve) setErreur('Deck non trouvé');
-        }
-    }, [decks, iddeck]);
 
     const supprimerCarte = async () => {
         try {
@@ -78,9 +69,7 @@ const DetailsDeck: React.FC = () => {
             <p><strong>Base :</strong> {deck?.base}</p>
             <p><strong>Créateur :</strong> {deck?.createur}</p>
             <p><strong>Victoires :</strong> {deck?.victoires}</p>
-            {deck?.description && (
-                <p><strong>Description :</strong> {deck?.description}</p>
-            )}
+            <p><strong>Description :</strong> {deck?.description}</p>
 
             <h3>Cartes dans le deck :</h3>
             <ul>

@@ -66,6 +66,12 @@ describe('Tests des routes /api/utilisateurs', () => {
         expect(res.body.utilisateurs.length).toBeGreaterThanOrEqual(1);
     });
 
+    it('GET /api/utilisateurs/:id - devrait retourner l utilisateurs selon l id', async () => {
+        const res = await request(app).get(`/api/utilisateurs/${idUtilisateurCreee}`);
+        expect(res.status).toBe(200);
+        expect(res.body.utilisateur._id).toContain(idUtilisateurCreee);
+    });
+
     it('DELETE /api/utilisateurs/supprimer/:id - devrait retouner un erreur que le id est pas bon', async () => {
         const res = await request(app).delete(`/api/utilisateurs/supprimer/6888e68bb`);
         expect(res.status).toBe(404);

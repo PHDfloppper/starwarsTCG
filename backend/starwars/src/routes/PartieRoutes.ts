@@ -6,8 +6,14 @@ import { IReq, IRes } from '../common/util/misc';
 
 // **** Functions **** //
 
-async function obtenirTout(_: IReq, res: IRes) {
+async function obtenirTout(req: IReq, res: IRes) {
   const parties = await PartieService.obtenirTout();
+  return res.status(HttpStatusCodes.OK).json({ parties });
+}
+
+async function chercherParId(req: IReq, res: IRes) {
+  const id = req.params.id;
+  const parties = await PartieService.chercherParId(id);
   return res.status(HttpStatusCodes.OK).json({ parties });
 }
 
@@ -47,6 +53,7 @@ async function supprimer(req: IReq, res: IRes) {
 
 export default {
   obtenirTout,
+  chercherParId,
   ajouter,
   modifier,
   supprimer,

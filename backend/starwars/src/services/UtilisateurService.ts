@@ -8,6 +8,10 @@ function obtenirTout(): Promise<IUtilisateur[]> {
   return UtilisateurRepo.obtenirTout();
 }
 
+function chercherParId(id:string): Promise<IUtilisateur> {
+  return UtilisateurRepo.chercherParId(id);
+}
+
 function ajouter(partie: IUtilisateur): Promise<IUtilisateur> {
   return UtilisateurRepo.ajouter(partie);
 }
@@ -24,6 +28,7 @@ async function supprimer(id: string): Promise<{ message: string }> {
 
 export default {
   obtenirTout,
+  chercherParId,
   ajouter,
   verifierMdp,
   supprimer,

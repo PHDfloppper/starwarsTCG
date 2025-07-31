@@ -6,8 +6,14 @@ import { IReq, IRes } from '../common/util/misc';
 
 // **** Functions **** //
 
-async function obtenirTout(_: IReq, res: IRes) {
+async function obtenirTout(req: IReq, res: IRes) {
   const decks = await DeckService.obtenirTout();
+  return res.status(HttpStatusCodes.OK).json({ decks });
+}
+
+async function chercherParId(req: IReq, res: IRes) {
+  const id = req.params.id;
+  const decks = await DeckService.chercherParId(id);
   return res.status(HttpStatusCodes.OK).json({ decks });
 }
 
@@ -48,6 +54,7 @@ async function supprimer(req: IReq, res: IRes) {
 
 export default {
   obtenirTout,
+  chercherParId,
   ajouter,
   modifier,
   supprimer,

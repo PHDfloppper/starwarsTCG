@@ -15,6 +15,17 @@ async function obtenirTout(): Promise<IPartie[]> {
   }
 }
 
+async function chercherParId(id: string): Promise<IPartie> {
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    throw new Error('ID de partie invalide');
+  }
+  const partie = await Partie.findById(id);
+  if (!partie) {
+    throw new Error('Partie non trouvé');
+  }
+  return partie;
+}
+
 async function ajouter(partie: IPartie): Promise<IPartie> {
   const nouvellePartie = new Partie(partie);
   await nouvellePartie.save();
@@ -55,6 +66,7 @@ async function supprimer(id: string): Promise<{ message: string }> {
 
 export default {
   obtenirTout,
+  chercherParId,
   ajouter,
   modifier,
   supprimer,

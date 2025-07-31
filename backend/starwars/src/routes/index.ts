@@ -23,6 +23,7 @@ apiRouter.use(Paths.Cartes.Base, cartesRouter);
 //decks
 const decksRouter = Router();
 decksRouter.get(Paths.Decks.Get, DeckRoutes.obtenirTout);
+decksRouter.get(Paths.Decks.GetId, DeckRoutes.chercherParId);
 decksRouter.post(Paths.Decks.Post , DeckRoutes.ajouter);
 decksRouter.put(Paths.Decks.Put, DeckRoutes.modifier);
 decksRouter.delete(Paths.Decks.Delete, DeckRoutes.supprimer);
@@ -31,6 +32,7 @@ apiRouter.use(Paths.Decks.Base, decksRouter);
 //parties
 const partiesRouter = Router();
 partiesRouter.get(Paths.Parties.Get, PartieRoutes.obtenirTout);
+partiesRouter.get(Paths.Parties.GetId, PartieRoutes.chercherParId);
 partiesRouter.post(Paths.Parties.Post , PartieRoutes.ajouter);
 partiesRouter.put(Paths.Parties.Put, PartieRoutes.modifier);
 partiesRouter.delete(Paths.Parties.Delete, PartieRoutes.supprimer);
@@ -39,6 +41,7 @@ apiRouter.use(Paths.Parties.Base, partiesRouter);
 //utilisateurs
 const utilisateursRouter = Router();
 utilisateursRouter.get(Paths.Utilisateurs.Get, UtilisateurRoutes.obtenirTout);
+utilisateursRouter.get(Paths.Utilisateurs.GetId, UtilisateurRoutes.chercherParId);
 utilisateursRouter.post(Paths.Utilisateurs.Post , UtilisateurRoutes.ajouter);
 utilisateursRouter.post(Paths.Utilisateurs.VerifMdp, UtilisateurRoutes.verifierMdp);
 utilisateursRouter.delete(Paths.Utilisateurs.Delete, UtilisateurRoutes.supprimer);

@@ -16,6 +16,17 @@ async function obtenirTout(): Promise<IUtilisateur[]> {
   }
 }
 
+async function chercherParId(id: string): Promise<IUtilisateur> {
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    throw new Error('ID de utilisateur invalide');
+  }
+  const utilisateur = await Utilisateur.findById(id);
+  if (!utilisateur) {
+    throw new Error('utilisateur non trouvé');
+  }
+  return utilisateur;
+}
+
 async function ajouter(utilisateur: IUtilisateur): Promise<IUtilisateur> {
   const nouveauxUtilisateur = new Utilisateur(utilisateur);
   await nouveauxUtilisateur.save();
@@ -54,6 +65,7 @@ async function supprimer(id: string): Promise<{ message: string }> {
 
 export default {
   obtenirTout,
+  chercherParId,
   ajouter,
   verifierMdp,
   supprimer,

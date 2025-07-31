@@ -1,0 +1,48 @@
+npm install bcrypt
+
+
+_____________________________________________________________________________________________________________________________
+
+
+
+import bcrypt from 'bcrypt';
+
+const SALT_ROUNDS = 10;
+
+async function ajouter(utilisateur: IUtilisateur): Promise<IUtilisateur> {
+  // Hasher le mot de passe avant de l’enregistrer
+  const hashedPassword = await bcrypt.hash(utilisateur.motDePasse, SALT_ROUNDS);
+  utilisateur.motDePasse = hashedPassword;
+
+  // Ensuite, insère l'utilisateur dans la base de données
+  const nouvelUtilisateur = await bd.execute(
+    `INSERT INTO utilisateur (nom, email, motDePasse) VALUES (?, ?, ?)`,
+    [utilisateur.nom, utilisateur.email, utilisateur.motDePasse]
+  );
+
+  // Retourne un objet ou les infos de l'utilisateur (sans le mot de passe si possible)
+  return {
+    ...utilisateur,
+    motDePasse: undefined, // ou tu peux l’omettre complètement si besoin
+  };
+}
+
+__________________________________________________________________________________________________________________________________________
+
+
+
+pour comparer mdp:
+
+const motDePasseCorrect = await bcrypt.compare(mdpEnClair, mdpHasheEnBDD);
+
+
+
+
+______________________________________________________________________________________________________________________________________
+
+// À la connexion :
+localStorage.setItem('nomUtilisateur', utilisateur.nom);
+
+// N'importe où dans l'app :
+const nomUtilisateur = localStorage.getItem('nomUtilisateur');
+

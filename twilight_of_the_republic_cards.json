@@ -1,0 +1,2587 @@
+[
+  {
+    "nom": "332nd Stalwart",
+    "type": "Unit",
+    "numero": "240"
+  },
+  {
+    "nom": "41st Elite Corps",
+    "type": "Unit",
+    "numero": "045"
+  },
+  {
+    "nom": "41st Elite Corps",
+    "type": "Unit",
+    "numero": "318"
+  },
+  {
+    "nom": "501st Liberator",
+    "type": "Unit",
+    "numero": "109"
+  },
+  {
+    "nom": "501st Liberator",
+    "type": "Unit",
+    "numero": "379"
+  },
+  {
+    "nom": "A Fine Addition",
+    "type": "Event",
+    "numero": "040"
+  },
+  {
+    "nom": "A Fine Addition",
+    "type": "Event",
+    "numero": "313"
+  },
+  {
+    "nom": "AT-TE Vanguard",
+    "type": "Unit",
+    "numero": "247"
+  },
+  {
+    "nom": "AT-TE Vanguard",
+    "type": "Unit",
+    "numero": "508"
+  },
+  {
+    "nom": "Aayla Secura",
+    "type": "Unit",
+    "numero": "096"
+  },
+  {
+    "nom": "Aayla Secura",
+    "type": "Unit",
+    "numero": "368"
+  },
+  {
+    "nom": "Admiral Trench",
+    "type": "Unit",
+    "numero": "086"
+  },
+  {
+    "nom": "Admiral Trench",
+    "type": "Unit",
+    "numero": "358"
+  },
+  {
+    "nom": "Admiral Yularen",
+    "type": "Unit",
+    "numero": "092"
+  },
+  {
+    "nom": "Admiral Yularen",
+    "type": "Unit",
+    "numero": "364"
+  },
+  {
+    "nom": "Advanced Recon Commando",
+    "type": "Unit",
+    "numero": "093"
+  },
+  {
+    "nom": "Advanced Recon Commando",
+    "type": "Unit",
+    "numero": "365"
+  },
+  {
+    "nom": "Aggrieved Parliamentarian",
+    "type": "Unit",
+    "numero": "252"
+  },
+  {
+    "nom": "Aggrieved Parliamentarian",
+    "type": "Unit",
+    "numero": "512"
+  },
+  {
+    "nom": "Ahsoka Tano",
+    "type": "Leader",
+    "numero": "011"
+  },
+  {
+    "nom": "Ahsoka Tano",
+    "type": "Unit",
+    "numero": "194"
+  },
+  {
+    "nom": "Ahsoka Tano",
+    "type": "Leader",
+    "numero": "268"
+  },
+  {
+    "nom": "Ahsoka Tano",
+    "type": "Unit",
+    "numero": "459"
+  },
+  {
+    "nom": "Ahsoka's Padawan Lightsaber",
+    "type": "Upgrade",
+    "numero": "248"
+  },
+  {
+    "nom": "Aid from the Innocent",
+    "type": "Event",
+    "numero": "201"
+  },
+  {
+    "nom": "Aid from the Innocent",
+    "type": "Event",
+    "numero": "466"
+  },
+  {
+    "nom": "Anakin Skywalker",
+    "type": "Leader",
+    "numero": "012"
+  },
+  {
+    "nom": "Anakin Skywalker",
+    "type": "Unit",
+    "numero": "147"
+  },
+  {
+    "nom": "Anakin Skywalker",
+    "type": "Leader",
+    "numero": "269"
+  },
+  {
+    "nom": "Anakin Skywalker",
+    "type": "Leader",
+    "numero": "287"
+  },
+  {
+    "nom": "Anakin's Interceptor",
+    "type": "Unit",
+    "numero": "142"
+  },
+  {
+    "nom": "Anakin's Interceptor",
+    "type": "Unit",
+    "numero": "410"
+  },
+  {
+    "nom": "Armored Saber Tank",
+    "type": "Unit",
+    "numero": "245"
+  },
+  {
+    "nom": "Armored Saber Tank",
+    "type": "Unit",
+    "numero": "506"
+  },
+  {
+    "nom": "Asajj Ventress",
+    "type": "Leader",
+    "numero": "014"
+  },
+  {
+    "nom": "Asajj Ventress",
+    "type": "Unit",
+    "numero": "134"
+  },
+  {
+    "nom": "Asajj Ventress",
+    "type": "Leader",
+    "numero": "271"
+  },
+  {
+    "nom": "Asajj Ventress",
+    "type": "Leader",
+    "numero": "289"
+  },
+  {
+    "nom": "Asajj Ventress",
+    "type": "Unit",
+    "numero": "402"
+  },
+  {
+    "nom": "Aurra Sing",
+    "type": "Unit",
+    "numero": "166"
+  },
+  {
+    "nom": "Aurra Sing",
+    "type": "Unit",
+    "numero": "433"
+  },
+  {
+    "nom": "B1 Attack Platform",
+    "type": "Unit",
+    "numero": "133"
+  },
+  {
+    "nom": "B1 Attack Platform",
+    "type": "Unit",
+    "numero": "401"
+  },
+  {
+    "nom": "B1 Security Team",
+    "type": "Unit",
+    "numero": "207"
+  },
+  {
+    "nom": "B1 Security Team",
+    "type": "Unit",
+    "numero": "472"
+  },
+  {
+    "nom": "B2 Legionnaires",
+    "type": "Unit",
+    "numero": "113"
+  },
+  {
+    "nom": "B2 Legionnaires",
+    "type": "Unit",
+    "numero": "383"
+  },
+  {
+    "nom": "Baktoid Spider Droid",
+    "type": "Unit",
+    "numero": "117"
+  },
+  {
+    "nom": "Baktoid Spider Droid",
+    "type": "Unit",
+    "numero": "387"
+  },
+  {
+    "nom": "Barriss Offee",
+    "type": "Unit",
+    "numero": "042"
+  },
+  {
+    "nom": "Barriss Offee",
+    "type": "Unit",
+    "numero": "315"
+  },
+  {
+    "nom": "Batch Brothers",
+    "type": "Unit",
+    "numero": "144"
+  },
+  {
+    "nom": "Batch Brothers",
+    "type": "Unit",
+    "numero": "412"
+  },
+  {
+    "nom": "Battle Droid Escort",
+    "type": "Unit",
+    "numero": "229"
+  },
+  {
+    "nom": "Battle Droid Legion",
+    "type": "Unit",
+    "numero": "235"
+  },
+  {
+    "nom": "Battle Droid Legion",
+    "type": "Unit",
+    "numero": "498"
+  },
+  {
+    "nom": "Blood Sport",
+    "type": "Event",
+    "numero": "173"
+  },
+  {
+    "nom": "Blood Sport",
+    "type": "Event",
+    "numero": "440"
+  },
+  {
+    "nom": "Bo-Katan Kryze",
+    "type": "Unit",
+    "numero": "130"
+  },
+  {
+    "nom": "Bo-Katan Kryze",
+    "type": "Unit",
+    "numero": "398"
+  },
+  {
+    "nom": "Bold Recon Commando",
+    "type": "Unit",
+    "numero": "161"
+  },
+  {
+    "nom": "Bold Recon Commando",
+    "type": "Unit",
+    "numero": "428"
+  },
+  {
+    "nom": "Bold Resistance",
+    "type": "Event",
+    "numero": "153"
+  },
+  {
+    "nom": "Bold Resistance",
+    "type": "Event",
+    "numero": "420"
+  },
+  {
+    "nom": "Brain Invaders",
+    "type": "Unit",
+    "numero": "255"
+  },
+  {
+    "nom": "Brain Invaders",
+    "type": "Unit",
+    "numero": "515"
+  },
+  {
+    "nom": "Breaking In",
+    "type": "Event",
+    "numero": "224"
+  },
+  {
+    "nom": "Breaking In",
+    "type": "Event",
+    "numero": "489"
+  },
+  {
+    "nom": "Cad Bane",
+    "type": "Unit",
+    "numero": "187"
+  },
+  {
+    "nom": "Cad Bane",
+    "type": "Unit",
+    "numero": "452"
+  },
+  {
+    "nom": "Calculating MagnaGuard",
+    "type": "Unit",
+    "numero": "033"
+  },
+  {
+    "nom": "Calculating MagnaGuard",
+    "type": "Unit",
+    "numero": "306"
+  },
+  {
+    "nom": "Captain Rex",
+    "type": "Leader",
+    "numero": "007"
+  },
+  {
+    "nom": "Captain Rex",
+    "type": "Unit",
+    "numero": "097"
+  },
+  {
+    "nom": "Captain Rex",
+    "type": "Leader",
+    "numero": "264"
+  },
+  {
+    "nom": "Captain Rex",
+    "type": "Leader",
+    "numero": "282"
+  },
+  {
+    "nom": "Captain Typho",
+    "type": "Unit",
+    "numero": "046"
+  },
+  {
+    "nom": "Captain Typho",
+    "type": "Unit",
+    "numero": "319"
+  },
+  {
+    "nom": "Caught in the Crossfire",
+    "type": "Event",
+    "numero": "176"
+  },
+  {
+    "nom": "Caught in the Crossfire",
+    "type": "Event",
+    "numero": "442"
+  },
+  {
+    "nom": "Chancellor Palpatine",
+    "type": "Unit",
+    "numero": "203"
+  },
+  {
+    "nom": "Chancellor Palpatine",
+    "type": "Unit",
+    "numero": "468"
+  },
+  {
+    "nom": "Chancellor Palpatine // Darth Sidious",
+    "type": "Leader",
+    "numero": "017"
+  },
+  {
+    "nom": "Chancellor Palpatine // Darth Sidious",
+    "type": "Leader",
+    "numero": "274"
+  },
+  {
+    "nom": "Chancellor Palpatine // Darth Sidious",
+    "type": "Leader",
+    "numero": "292"
+  },
+  {
+    "nom": "Clear the Field",
+    "type": "Event",
+    "numero": "199"
+  },
+  {
+    "nom": "Clear the Field",
+    "type": "Event",
+    "numero": "464"
+  },
+  {
+    "nom": "Clone",
+    "type": "Unit",
+    "numero": "116"
+  },
+  {
+    "nom": "Clone",
+    "type": "Unit",
+    "numero": "386"
+  },
+  {
+    "nom": "Clone Cohort",
+    "type": "Upgrade",
+    "numero": "169"
+  },
+  {
+    "nom": "Clone Cohort",
+    "type": "Upgrade",
+    "numero": "436"
+  },
+  {
+    "nom": "Clone Commander Cody",
+    "type": "Unit",
+    "numero": "114"
+  },
+  {
+    "nom": "Clone Commander Cody",
+    "type": "Unit",
+    "numero": "384"
+  },
+  {
+    "nom": "Clone Dive Trooper",
+    "type": "Unit",
+    "numero": "205"
+  },
+  {
+    "nom": "Clone Dive Trooper",
+    "type": "Unit",
+    "numero": "470"
+  },
+  {
+    "nom": "Clone Heavy Gunner",
+    "type": "Unit",
+    "numero": "158"
+  },
+  {
+    "nom": "Clone Heavy Gunner",
+    "type": "Unit",
+    "numero": "425"
+  },
+  {
+    "nom": "Compassionate Senator",
+    "type": "Unit",
+    "numero": "056"
+  },
+  {
+    "nom": "Compassionate Senator",
+    "type": "Unit",
+    "numero": "329"
+  },
+  {
+    "nom": "Confederate Courier",
+    "type": "Unit",
+    "numero": "079"
+  },
+  {
+    "nom": "Confederate Courier",
+    "type": "Unit",
+    "numero": "352"
+  },
+  {
+    "nom": "Confederate Tri-Fighter",
+    "type": "Unit",
+    "numero": "132"
+  },
+  {
+    "nom": "Confederate Tri-Fighter",
+    "type": "Unit",
+    "numero": "400"
+  },
+  {
+    "nom": "Consolidation of Power",
+    "type": "Event",
+    "numero": "089"
+  },
+  {
+    "nom": "Consolidation of Power",
+    "type": "Event",
+    "numero": "361"
+  },
+  {
+    "nom": "Corner the Prey",
+    "type": "Event",
+    "numero": "139"
+  },
+  {
+    "nom": "Corner the Prey",
+    "type": "Event",
+    "numero": "407"
+  },
+  {
+    "nom": "Coruscant Guard",
+    "type": "Unit",
+    "numero": "106"
+  },
+  {
+    "nom": "Coruscant Guard",
+    "type": "Unit",
+    "numero": "377"
+  },
+  {
+    "nom": "Count Dooku",
+    "type": "Leader",
+    "numero": "005"
+  },
+  {
+    "nom": "Count Dooku",
+    "type": "Unit",
+    "numero": "138"
+  },
+  {
+    "nom": "Count Dooku",
+    "type": "Leader",
+    "numero": "262"
+  },
+  {
+    "nom": "Count Dooku",
+    "type": "Leader",
+    "numero": "280"
+  },
+  {
+    "nom": "Count Dooku",
+    "type": "Unit",
+    "numero": "406"
+  },
+  {
+    "nom": "Creative Thinking",
+    "type": "Event",
+    "numero": "200"
+  },
+  {
+    "nom": "Creative Thinking",
+    "type": "Event",
+    "numero": "465"
+  },
+  {
+    "nom": "Daring Raid",
+    "type": "Event",
+    "numero": "170"
+  },
+  {
+    "nom": "Daring Raid",
+    "type": "Event",
+    "numero": "437"
+  },
+  {
+    "nom": "Darth Maul",
+    "type": "Unit",
+    "numero": "135"
+  },
+  {
+    "nom": "Darth Maul",
+    "type": "Unit",
+    "numero": "403"
+  },
+  {
+    "nom": "Daughter of Dathomir",
+    "type": "Unit",
+    "numero": "062"
+  },
+  {
+    "nom": "Daughter of Dathomir",
+    "type": "Unit",
+    "numero": "335"
+  },
+  {
+    "nom": "Death by Droids",
+    "type": "Event",
+    "numero": "076"
+  },
+  {
+    "nom": "Death by Droids",
+    "type": "Event",
+    "numero": "349"
+  },
+  {
+    "nom": "Dendup's Loyalist",
+    "type": "Unit",
+    "numero": "159"
+  },
+  {
+    "nom": "Dendup's Loyalist",
+    "type": "Unit",
+    "numero": "426"
+  },
+  {
+    "nom": "Devastating Gunship",
+    "type": "Unit",
+    "numero": "036"
+  },
+  {
+    "nom": "Devastating Gunship",
+    "type": "Unit",
+    "numero": "309"
+  },
+  {
+    "nom": "Disaffected Senator",
+    "type": "Unit",
+    "numero": "157"
+  },
+  {
+    "nom": "Disaffected Senator",
+    "type": "Unit",
+    "numero": "424"
+  },
+  {
+    "nom": "Disruptive Burst",
+    "type": "Event",
+    "numero": "075"
+  },
+  {
+    "nom": "Disruptive Burst",
+    "type": "Event",
+    "numero": "348"
+  },
+  {
+    "nom": "Droid Cohort",
+    "type": "Upgrade",
+    "numero": "218"
+  },
+  {
+    "nom": "Droid Cohort",
+    "type": "Upgrade",
+    "numero": "483"
+  },
+  {
+    "nom": "Droid Commando",
+    "type": "Unit",
+    "numero": "081"
+  },
+  {
+    "nom": "Droid Commando",
+    "type": "Unit",
+    "numero": "354"
+  },
+  {
+    "nom": "Droid Deployment",
+    "type": "Event",
+    "numero": "237"
+  },
+  {
+    "nom": "Droid Deployment",
+    "type": "Event",
+    "numero": "499"
+  },
+  {
+    "nom": "Droid Manufactory",
+    "type": "Base",
+    "numero": "022"
+  },
+  {
+    "nom": "Droid Manufactory",
+    "type": "Base",
+    "numero": "297"
+  },
+  {
+    "nom": "Droid Starfighter",
+    "type": "Unit",
+    "numero": "228"
+  },
+  {
+    "nom": "Droid Starfighter",
+    "type": "Unit",
+    "numero": "492"
+  },
+  {
+    "nom": "Droideka Security",
+    "type": "Unit",
+    "numero": "037"
+  },
+  {
+    "nom": "Droideka Security",
+    "type": "Unit",
+    "numero": "310"
+  },
+  {
+    "nom": "Drop In",
+    "type": "Event",
+    "numero": "251"
+  },
+  {
+    "nom": "Drop In",
+    "type": "Event",
+    "numero": "511"
+  },
+  {
+    "nom": "Duchess's Champion",
+    "type": "Unit",
+    "numero": "054"
+  },
+  {
+    "nom": "Duchess's Champion",
+    "type": "Unit",
+    "numero": "327"
+  },
+  {
+    "nom": "Dwarf Spider Droid",
+    "type": "Unit",
+    "numero": "231"
+  },
+  {
+    "nom": "Dwarf Spider Droid",
+    "type": "Unit",
+    "numero": "494"
+  },
+  {
+    "nom": "Echo",
+    "type": "Unit",
+    "numero": "090"
+  },
+  {
+    "nom": "Echo",
+    "type": "Unit",
+    "numero": "362"
+  },
+  {
+    "nom": "Elite P-38 Starfighter",
+    "type": "Unit",
+    "numero": "181"
+  },
+  {
+    "nom": "Elite P-38 Starfighter",
+    "type": "Unit",
+    "numero": "446"
+  },
+  {
+    "nom": "Encouraging Leadership",
+    "type": "Event",
+    "numero": "126"
+  },
+  {
+    "nom": "Encouraging Leadership",
+    "type": "Event",
+    "numero": "394"
+  },
+  {
+    "nom": "Enfys Nest",
+    "type": "Unit",
+    "numero": "198"
+  },
+  {
+    "nom": "Enfys Nest",
+    "type": "Unit",
+    "numero": "463"
+  },
+  {
+    "nom": "Equalize",
+    "type": "Event",
+    "numero": "055"
+  },
+  {
+    "nom": "Equalize",
+    "type": "Event",
+    "numero": "328"
+  },
+  {
+    "nom": "Eta-2 Light Interceptor",
+    "type": "Unit",
+    "numero": "244"
+  },
+  {
+    "nom": "Eta-2 Light Interceptor",
+    "type": "Unit",
+    "numero": "505"
+  },
+  {
+    "nom": "Execute Order 66",
+    "type": "Event",
+    "numero": "239"
+  },
+  {
+    "nom": "Execute Order 66",
+    "type": "Event",
+    "numero": "501"
+  },
+  {
+    "nom": "Falchion Ion Tank",
+    "type": "Unit",
+    "numero": "065"
+  },
+  {
+    "nom": "Falchion Ion Tank",
+    "type": "Unit",
+    "numero": "338"
+  },
+  {
+    "nom": "Favorable Delegate",
+    "type": "Unit",
+    "numero": "208"
+  },
+  {
+    "nom": "Favorable Delegate",
+    "type": "Unit",
+    "numero": "473"
+  },
+  {
+    "nom": "Finn",
+    "type": "Unit",
+    "numero": "053"
+  },
+  {
+    "nom": "Finn",
+    "type": "Unit",
+    "numero": "326"
+  },
+  {
+    "nom": "Fives",
+    "type": "Unit",
+    "numero": "216"
+  },
+  {
+    "nom": "Fives",
+    "type": "Unit",
+    "numero": "481"
+  },
+  {
+    "nom": "For The Republic",
+    "type": "Upgrade",
+    "numero": "051"
+  },
+  {
+    "nom": "For The Republic",
+    "type": "Upgrade",
+    "numero": "324"
+  },
+  {
+    "nom": "Foresight",
+    "type": "Upgrade",
+    "numero": "068"
+  },
+  {
+    "nom": "Foresight",
+    "type": "Upgrade",
+    "numero": "341"
+  },
+  {
+    "nom": "Freelance Assassin",
+    "type": "Unit",
+    "numero": "212"
+  },
+  {
+    "nom": "Freelance Assassin",
+    "type": "Unit",
+    "numero": "477"
+  },
+  {
+    "nom": "General Grievous",
+    "type": "Leader",
+    "numero": "015"
+  },
+  {
+    "nom": "General Grievous",
+    "type": "Unit",
+    "numero": "034"
+  },
+  {
+    "nom": "General Grievous",
+    "type": "Leader",
+    "numero": "272"
+  },
+  {
+    "nom": "General Grievous",
+    "type": "Unit",
+    "numero": "307"
+  },
+  {
+    "nom": "General's Blade",
+    "type": "Upgrade",
+    "numero": "121"
+  },
+  {
+    "nom": "General's Blade",
+    "type": "Upgrade",
+    "numero": "391"
+  },
+  {
+    "nom": "General's Guardian",
+    "type": "Unit",
+    "numero": "083"
+  },
+  {
+    "nom": "Geonosis Patrol Fighter",
+    "type": "Unit",
+    "numero": "215"
+  },
+  {
+    "nom": "Geonosis Patrol Fighter",
+    "type": "Unit",
+    "numero": "480"
+  },
+  {
+    "nom": "Gor",
+    "type": "Unit",
+    "numero": "118"
+  },
+  {
+    "nom": "Gor",
+    "type": "Unit",
+    "numero": "388"
+  },
+  {
+    "nom": "Grenade Strike",
+    "type": "Event",
+    "numero": "171"
+  },
+  {
+    "nom": "Grenade Strike",
+    "type": "Event",
+    "numero": "438"
+  },
+  {
+    "nom": "Grievous Reassembly",
+    "type": "Event",
+    "numero": "073"
+  },
+  {
+    "nom": "Grievous Reassembly",
+    "type": "Event",
+    "numero": "346"
+  },
+  {
+    "nom": "Grievous's Wheel Bike",
+    "type": "Upgrade",
+    "numero": "236"
+  },
+  {
+    "nom": "Grim Resolve",
+    "type": "Event",
+    "numero": "172"
+  },
+  {
+    "nom": "Grim Resolve",
+    "type": "Event",
+    "numero": "439"
+  },
+  {
+    "nom": "Guarding the Way",
+    "type": "Event",
+    "numero": "074"
+  },
+  {
+    "nom": "Guarding the Way",
+    "type": "Event",
+    "numero": "347"
+  },
+  {
+    "nom": "Guerilla Insurgency",
+    "type": "Event",
+    "numero": "177"
+  },
+  {
+    "nom": "Guerilla Insurgency",
+    "type": "Event",
+    "numero": "443"
+  },
+  {
+    "nom": "Hailfire Tank",
+    "type": "Unit",
+    "numero": "233"
+  },
+  {
+    "nom": "Hailfire Tank",
+    "type": "Unit",
+    "numero": "496"
+  },
+  {
+    "nom": "Headhunter Squadron ",
+    "type": "Unit",
+    "numero": "253"
+  },
+  {
+    "nom": "Headhunter Squadron ",
+    "type": "Unit",
+    "numero": "513"
+  },
+  {
+    "nom": "Heavy Persuader Tank",
+    "type": "Unit",
+    "numero": "167"
+  },
+  {
+    "nom": "Heavy Persuader Tank",
+    "type": "Unit",
+    "numero": "434"
+  },
+  {
+    "nom": "Hello There",
+    "type": "Event",
+    "numero": "052"
+  },
+  {
+    "nom": "Hello There",
+    "type": "Event",
+    "numero": "325"
+  },
+  {
+    "nom": "Heroes on Both Sides",
+    "type": "Event",
+    "numero": "249"
+  },
+  {
+    "nom": "Heroes on Both Sides",
+    "type": "Event",
+    "numero": "509"
+  },
+  {
+    "nom": "Hevy",
+    "type": "Unit",
+    "numero": "164"
+  },
+  {
+    "nom": "Hevy",
+    "type": "Unit",
+    "numero": "431"
+  },
+  {
+    "nom": "Hidden Sharpshooter",
+    "type": "Unit",
+    "numero": "214"
+  },
+  {
+    "nom": "Hidden Sharpshooter",
+    "type": "Unit",
+    "numero": "479"
+  },
+  {
+    "nom": "Hold-Out Blaster",
+    "type": "Upgrade",
+    "numero": "256"
+  },
+  {
+    "nom": "Hold-Out Blaster",
+    "type": "Upgrade",
+    "numero": "516"
+  },
+  {
+    "nom": "Hotshot V-Wing",
+    "type": "Unit",
+    "numero": "209"
+  },
+  {
+    "nom": "Hotshot V-Wing",
+    "type": "Unit",
+    "numero": "474"
+  },
+  {
+    "nom": "Huyang",
+    "type": "Unit",
+    "numero": "110"
+  },
+  {
+    "nom": "Huyang",
+    "type": "Unit",
+    "numero": "380"
+  },
+  {
+    "nom": "I Have the High Ground",
+    "type": "Event",
+    "numero": "072"
+  },
+  {
+    "nom": "I Have the High Ground",
+    "type": "Event",
+    "numero": "345"
+  },
+  {
+    "nom": "Impropriety Among Thieves",
+    "type": "Event",
+    "numero": "204"
+  },
+  {
+    "nom": "Impropriety Among Thieves",
+    "type": "Event",
+    "numero": "469"
+  },
+  {
+    "nom": "In Defense of Kamino",
+    "type": "Event",
+    "numero": "129"
+  },
+  {
+    "nom": "In Defense of Kamino",
+    "type": "Event",
+    "numero": "397"
+  },
+  {
+    "nom": "In Pursuit",
+    "type": "Event",
+    "numero": "221"
+  },
+  {
+    "nom": "In Pursuit",
+    "type": "Event",
+    "numero": "486"
+  },
+  {
+    "nom": "Independent Senator",
+    "type": "Unit",
+    "numero": "206"
+  },
+  {
+    "nom": "Independent Senator",
+    "type": "Unit",
+    "numero": "471"
+  },
+  {
+    "nom": "Infantry of the 212th",
+    "type": "Unit",
+    "numero": "061"
+  },
+  {
+    "nom": "Infantry of the 212th",
+    "type": "Unit",
+    "numero": "334"
+  },
+  {
+    "nom": "Infiltrating Demolisher",
+    "type": "Unit",
+    "numero": "182"
+  },
+  {
+    "nom": "Infiltrating Demolisher",
+    "type": "Unit",
+    "numero": "447"
+  },
+  {
+    "nom": "Jango Fett",
+    "type": "Leader",
+    "numero": "016"
+  },
+  {
+    "nom": "Jango Fett",
+    "type": "Leader",
+    "numero": "273"
+  },
+  {
+    "nom": "Jango Fett",
+    "type": "Leader",
+    "numero": "291"
+  },
+  {
+    "nom": "Jar Jar Binks",
+    "type": "Unit",
+    "numero": "202"
+  },
+  {
+    "nom": "Jar Jar Binks",
+    "type": "Unit",
+    "numero": "467"
+  },
+  {
+    "nom": "Jesse",
+    "type": "Unit",
+    "numero": "145"
+  },
+  {
+    "nom": "Jesse",
+    "type": "Unit",
+    "numero": "413"
+  },
+  {
+    "nom": "Jyn Erso",
+    "type": "Unit",
+    "numero": "143"
+  },
+  {
+    "nom": "Jyn Erso",
+    "type": "Unit",
+    "numero": "411"
+  },
+  {
+    "nom": "KCM Mining Facility",
+    "type": "Base",
+    "numero": "026"
+  },
+  {
+    "nom": "KCM Mining Facility",
+    "type": "Base",
+    "numero": "301"
+  },
+  {
+    "nom": "Kalani",
+    "type": "Unit",
+    "numero": "085"
+  },
+  {
+    "nom": "Kalani",
+    "type": "Unit",
+    "numero": "357"
+  },
+  {
+    "nom": "Kashyyyk Defender",
+    "type": "Unit",
+    "numero": "044"
+  },
+  {
+    "nom": "Kashyyyk Defender",
+    "type": "Unit",
+    "numero": "317"
+  },
+  {
+    "nom": "Ki-Adi-Mundi",
+    "type": "Unit",
+    "numero": "064"
+  },
+  {
+    "nom": "Ki-Adi-Mundi",
+    "type": "Unit",
+    "numero": "337"
+  },
+  {
+    "nom": "Kit Fisto",
+    "type": "Unit",
+    "numero": "165"
+  },
+  {
+    "nom": "Kit Fisto",
+    "type": "Unit",
+    "numero": "432"
+  },
+  {
+    "nom": "Knight of the Republic",
+    "type": "Unit",
+    "numero": "049"
+  },
+  {
+    "nom": "Knight of the Republic",
+    "type": "Unit",
+    "numero": "322"
+  },
+  {
+    "nom": "Kraken",
+    "type": "Unit",
+    "numero": "084"
+  },
+  {
+    "nom": "Kraken",
+    "type": "Unit",
+    "numero": "356"
+  },
+  {
+    "nom": "Lair of Grievous",
+    "type": "Base",
+    "numero": "023"
+  },
+  {
+    "nom": "Lair of Grievous",
+    "type": "Base",
+    "numero": "298"
+  },
+  {
+    "nom": "Lethal Crackdown",
+    "type": "Event",
+    "numero": "041"
+  },
+  {
+    "nom": "Lethal Crackdown",
+    "type": "Event",
+    "numero": "314"
+  },
+  {
+    "nom": "Level 1313",
+    "type": "Base",
+    "numero": "029"
+  },
+  {
+    "nom": "Level 1313",
+    "type": "Base",
+    "numero": "518"
+  },
+  {
+    "nom": "Low Altitude Gunship",
+    "type": "Unit",
+    "numero": "149"
+  },
+  {
+    "nom": "Low Altitude Gunship",
+    "type": "Unit",
+    "numero": "416"
+  },
+  {
+    "nom": "Luminara Unduli",
+    "type": "Unit",
+    "numero": "050"
+  },
+  {
+    "nom": "Luminara Unduli",
+    "type": "Unit",
+    "numero": "323"
+  },
+  {
+    "nom": "Lux Bonteri",
+    "type": "Unit",
+    "numero": "210"
+  },
+  {
+    "nom": "Lux Bonteri",
+    "type": "Unit",
+    "numero": "475"
+  },
+  {
+    "nom": "Mace Windu",
+    "type": "Leader",
+    "numero": "013"
+  },
+  {
+    "nom": "Mace Windu",
+    "type": "Leader",
+    "numero": "270"
+  },
+  {
+    "nom": "Mace Windu",
+    "type": "Leader",
+    "numero": "288"
+  },
+  {
+    "nom": "Mace Windu's Lightsaber",
+    "type": "Upgrade",
+    "numero": "152"
+  },
+  {
+    "nom": "Mace Windu's Lightsaber",
+    "type": "Upgrade",
+    "numero": "419"
+  },
+  {
+    "nom": "MagnaGuard Wing Leader",
+    "type": "Unit",
+    "numero": "082"
+  },
+  {
+    "nom": "MagnaGuard Wing Leader",
+    "type": "Unit",
+    "numero": "355"
+  },
+  {
+    "nom": "Malevolence",
+    "type": "Unit",
+    "numero": "039"
+  },
+  {
+    "nom": "Malevolence",
+    "type": "Unit",
+    "numero": "312"
+  },
+  {
+    "nom": "Manufactured Soldiers",
+    "type": "Event",
+    "numero": "102"
+  },
+  {
+    "nom": "Manufactured Soldiers",
+    "type": "Event",
+    "numero": "373"
+  },
+  {
+    "nom": "Mas Amedda",
+    "type": "Unit",
+    "numero": "101"
+  },
+  {
+    "nom": "Mas Amedda",
+    "type": "Unit",
+    "numero": "372"
+  },
+  {
+    "nom": "Maul",
+    "type": "Leader",
+    "numero": "009"
+  },
+  {
+    "nom": "Maul",
+    "type": "Leader",
+    "numero": "266"
+  },
+  {
+    "nom": "Maul",
+    "type": "Leader",
+    "numero": "284"
+  },
+  {
+    "nom": "Merciless Contest",
+    "type": "Event",
+    "numero": "238"
+  },
+  {
+    "nom": "Merciless Contest",
+    "type": "Event",
+    "numero": "500"
+  },
+  {
+    "nom": "Mister Bones",
+    "type": "Unit",
+    "numero": "154"
+  },
+  {
+    "nom": "Mister Bones",
+    "type": "Unit",
+    "numero": "421"
+  },
+  {
+    "nom": "Morgan Elsbeth",
+    "type": "Unit",
+    "numero": "035"
+  },
+  {
+    "nom": "Morgan Elsbeth",
+    "type": "Unit",
+    "numero": "308"
+  },
+  {
+    "nom": "Multi-Troop Transport",
+    "type": "Unit",
+    "numero": "066"
+  },
+  {
+    "nom": "Multi-Troop Transport",
+    "type": "Unit",
+    "numero": "339"
+  },
+  {
+    "nom": "Nala Se",
+    "type": "Leader",
+    "numero": "001"
+  },
+  {
+    "nom": "Nala Se",
+    "type": "Leader",
+    "numero": "258"
+  },
+  {
+    "nom": "Nala Se",
+    "type": "Leader",
+    "numero": "276"
+  },
+  {
+    "nom": "Nameless Valor",
+    "type": "Upgrade",
+    "numero": "119"
+  },
+  {
+    "nom": "Nameless Valor",
+    "type": "Upgrade",
+    "numero": "389"
+  },
+  {
+    "nom": "Now There Are Two of Them",
+    "type": "Event",
+    "numero": "225"
+  },
+  {
+    "nom": "Now There Are Two of Them",
+    "type": "Event",
+    "numero": "490"
+  },
+  {
+    "nom": "Nute Gunray",
+    "type": "Leader",
+    "numero": "002"
+  },
+  {
+    "nom": "Nute Gunray",
+    "type": "Leader",
+    "numero": "259"
+  },
+  {
+    "nom": "Nute Gunray",
+    "type": "Leader",
+    "numero": "277"
+  },
+  {
+    "nom": "OOM-Series Officer",
+    "type": "Unit",
+    "numero": "131"
+  },
+  {
+    "nom": "OOM-Series Officer",
+    "type": "Unit",
+    "numero": "399"
+  },
+  {
+    "nom": "Obedient Vanguard",
+    "type": "Unit",
+    "numero": "104"
+  },
+  {
+    "nom": "Obedient Vanguard",
+    "type": "Unit",
+    "numero": "375"
+  },
+  {
+    "nom": "Obi-Wan Kenobi",
+    "type": "Leader",
+    "numero": "003"
+  },
+  {
+    "nom": "Obi-Wan Kenobi",
+    "type": "Leader",
+    "numero": "260"
+  },
+  {
+    "nom": "Obi-Wan Kenobi",
+    "type": "Leader",
+    "numero": "278"
+  },
+  {
+    "nom": "Obi-Wan's Aethersprite",
+    "type": "Unit",
+    "numero": "048"
+  },
+  {
+    "nom": "Obi-Wan's Aethersprite",
+    "type": "Unit",
+    "numero": "321"
+  },
+  {
+    "nom": "Old Access Codes",
+    "type": "Upgrade",
+    "numero": "168"
+  },
+  {
+    "nom": "Old Access Codes",
+    "type": "Upgrade",
+    "numero": "435"
+  },
+  {
+    "nom": "On Top of Things",
+    "type": "Upgrade",
+    "numero": "219"
+  },
+  {
+    "nom": "On Top of Things",
+    "type": "Upgrade",
+    "numero": "484"
+  },
+  {
+    "nom": "On the Doorstep",
+    "type": "Event",
+    "numero": "190"
+  },
+  {
+    "nom": "On the Doorstep",
+    "type": "Event",
+    "numero": "455"
+  },
+  {
+    "nom": "Open Fire",
+    "type": "Event",
+    "numero": "174"
+  },
+  {
+    "nom": "Osi Sobeck",
+    "type": "Unit",
+    "numero": "115"
+  },
+  {
+    "nom": "Osi Sobeck",
+    "type": "Unit",
+    "numero": "385"
+  },
+  {
+    "nom": "Outflank",
+    "type": "Event",
+    "numero": "123"
+  },
+  {
+    "nom": "Outspoken Representative",
+    "type": "Unit",
+    "numero": "043"
+  },
+  {
+    "nom": "Outspoken Representative",
+    "type": "Unit",
+    "numero": "316"
+  },
+  {
+    "nom": "Padawan Starfighter",
+    "type": "Unit",
+    "numero": "058"
+  },
+  {
+    "nom": "Padawan Starfighter",
+    "type": "Unit",
+    "numero": "331"
+  },
+  {
+    "nom": "Padmé Amidala",
+    "type": "Leader",
+    "numero": "008"
+  },
+  {
+    "nom": "Padmé Amidala",
+    "type": "Unit",
+    "numero": "192"
+  },
+  {
+    "nom": "Padmé Amidala",
+    "type": "Leader",
+    "numero": "265"
+  },
+  {
+    "nom": "Padmé Amidala",
+    "type": "Leader",
+    "numero": "283"
+  },
+  {
+    "nom": "Padmé Amidala",
+    "type": "Unit",
+    "numero": "457"
+  },
+  {
+    "nom": "Patrolling AAT",
+    "type": "Unit",
+    "numero": "232"
+  },
+  {
+    "nom": "Patrolling AAT",
+    "type": "Unit",
+    "numero": "495"
+  },
+  {
+    "nom": "Patrolling V-Wing",
+    "type": "Unit",
+    "numero": "107"
+  },
+  {
+    "nom": "Pau City",
+    "type": "Base",
+    "numero": "019"
+  },
+  {
+    "nom": "Pau City",
+    "type": "Base",
+    "numero": "294"
+  },
+  {
+    "nom": "Pelta Supply Frigate",
+    "type": "Unit",
+    "numero": "095"
+  },
+  {
+    "nom": "Pelta Supply Frigate",
+    "type": "Unit",
+    "numero": "367"
+  },
+  {
+    "nom": "Perilous Position",
+    "type": "Upgrade",
+    "numero": "070"
+  },
+  {
+    "nom": "Perilous Position",
+    "type": "Upgrade",
+    "numero": "343"
+  },
+  {
+    "nom": "Petition the Senate",
+    "type": "Event",
+    "numero": "100"
+  },
+  {
+    "nom": "Petition the Senate",
+    "type": "Event",
+    "numero": "371"
+  },
+  {
+    "nom": "Petranaki Arena",
+    "type": "Base",
+    "numero": "028"
+  },
+  {
+    "nom": "Petranaki Arena",
+    "type": "Base",
+    "numero": "303"
+  },
+  {
+    "nom": "Phase I Clone Trooper",
+    "type": "Unit",
+    "numero": "241"
+  },
+  {
+    "nom": "Phase I Clone Trooper",
+    "type": "Unit",
+    "numero": "502"
+  },
+  {
+    "nom": "Phase II Clone Trooper",
+    "type": "Unit",
+    "numero": "242"
+  },
+  {
+    "nom": "Phase II Clone Trooper",
+    "type": "Unit",
+    "numero": "503"
+  },
+  {
+    "nom": "Planetary Invasion",
+    "type": "Event",
+    "numero": "178"
+  },
+  {
+    "nom": "Planetary Invasion",
+    "type": "Event",
+    "numero": "444"
+  },
+  {
+    "nom": "Plo Koon",
+    "type": "Unit",
+    "numero": "196"
+  },
+  {
+    "nom": "Plo Koon",
+    "type": "Unit",
+    "numero": "461"
+  },
+  {
+    "nom": "Poggle the Lesser",
+    "type": "Unit",
+    "numero": "080"
+  },
+  {
+    "nom": "Poggle the Lesser",
+    "type": "Unit",
+    "numero": "353"
+  },
+  {
+    "nom": "Political Pressure",
+    "type": "Event",
+    "numero": "222"
+  },
+  {
+    "nom": "Political Pressure",
+    "type": "Event",
+    "numero": "487"
+  },
+  {
+    "nom": "Pre Vizsla",
+    "type": "Leader",
+    "numero": "010"
+  },
+  {
+    "nom": "Pre Vizsla",
+    "type": "Leader",
+    "numero": "267"
+  },
+  {
+    "nom": "Pre Vizsla",
+    "type": "Leader",
+    "numero": "285"
+  },
+  {
+    "nom": "Prisoner of War",
+    "type": "Event",
+    "numero": "227"
+  },
+  {
+    "nom": "Prisoner of War",
+    "type": "Event",
+    "numero": "491"
+  },
+  {
+    "nom": "Private Manufacturing",
+    "type": "Event",
+    "numero": "257"
+  },
+  {
+    "nom": "Private Manufacturing",
+    "type": "Event",
+    "numero": "517"
+  },
+  {
+    "nom": "Providence Destroyer",
+    "type": "Unit",
+    "numero": "038"
+  },
+  {
+    "nom": "Providence Destroyer",
+    "type": "Unit",
+    "numero": "311"
+  },
+  {
+    "nom": "Pyke Palace",
+    "type": "Base",
+    "numero": "030"
+  },
+  {
+    "nom": "Pyke Palace",
+    "type": "Base",
+    "numero": "519"
+  },
+  {
+    "nom": "Pyrrhic Assault",
+    "type": "Event",
+    "numero": "103"
+  },
+  {
+    "nom": "Pyrrhic Assault",
+    "type": "Event",
+    "numero": "374"
+  },
+  {
+    "nom": "Quinlan Vos",
+    "type": "Leader",
+    "numero": "018"
+  },
+  {
+    "nom": "Quinlan Vos",
+    "type": "Leader",
+    "numero": "275"
+  },
+  {
+    "nom": "Quinlan Vos",
+    "type": "Leader",
+    "numero": "293"
+  },
+  {
+    "nom": "R2-D2",
+    "type": "Unit",
+    "numero": "193"
+  },
+  {
+    "nom": "R2-D2",
+    "type": "Unit",
+    "numero": "458"
+  },
+  {
+    "nom": "Reckless Torrent",
+    "type": "Unit",
+    "numero": "162"
+  },
+  {
+    "nom": "Reckless Torrent",
+    "type": "Unit",
+    "numero": "429"
+  },
+  {
+    "nom": "Relentless Rocket Droid",
+    "type": "Unit",
+    "numero": "163"
+  },
+  {
+    "nom": "Relentless Rocket Droid",
+    "type": "Unit",
+    "numero": "430"
+  },
+  {
+    "nom": "Reprocess",
+    "type": "Event",
+    "numero": "088"
+  },
+  {
+    "nom": "Reprocess",
+    "type": "Event",
+    "numero": "360"
+  },
+  {
+    "nom": "Republic ARC-170",
+    "type": "Unit",
+    "numero": "111"
+  },
+  {
+    "nom": "Republic ARC-170",
+    "type": "Unit",
+    "numero": "381"
+  },
+  {
+    "nom": "Republic Attack Pod",
+    "type": "Unit",
+    "numero": "197"
+  },
+  {
+    "nom": "Republic Attack Pod",
+    "type": "Unit",
+    "numero": "462"
+  },
+  {
+    "nom": "Republic Commando",
+    "type": "Unit",
+    "numero": "243"
+  },
+  {
+    "nom": "Republic Commando",
+    "type": "Unit",
+    "numero": "504"
+  },
+  {
+    "nom": "Republic Defense Carrier",
+    "type": "Unit",
+    "numero": "098"
+  },
+  {
+    "nom": "Republic Defense Carrier",
+    "type": "Unit",
+    "numero": "369"
+  },
+  {
+    "nom": "Republic Tactical Officer",
+    "type": "Unit",
+    "numero": "091"
+  },
+  {
+    "nom": "Republic Tactical Officer",
+    "type": "Unit",
+    "numero": "363"
+  },
+  {
+    "nom": "Resolute",
+    "type": "Unit",
+    "numero": "151"
+  },
+  {
+    "nom": "Resolute",
+    "type": "Unit",
+    "numero": "418"
+  },
+  {
+    "nom": "Resupply",
+    "type": "Event",
+    "numero": "127"
+  },
+  {
+    "nom": "Resupply",
+    "type": "Event",
+    "numero": "395"
+  },
+  {
+    "nom": "Roger Roger",
+    "type": "Upgrade",
+    "numero": "069"
+  },
+  {
+    "nom": "Roger Roger",
+    "type": "Upgrade",
+    "numero": "342"
+  },
+  {
+    "nom": "Royal Guard Attaché",
+    "type": "Unit",
+    "numero": "059"
+  },
+  {
+    "nom": "Royal Guard Attaché",
+    "type": "Unit",
+    "numero": "332"
+  },
+  {
+    "nom": "Rune Haako",
+    "type": "Unit",
+    "numero": "031"
+  },
+  {
+    "nom": "Rune Haako",
+    "type": "Unit",
+    "numero": "304"
+  },
+  {
+    "nom": "Rush Clovis",
+    "type": "Unit",
+    "numero": "183"
+  },
+  {
+    "nom": "Rush Clovis",
+    "type": "Unit",
+    "numero": "448"
+  },
+  {
+    "nom": "Ryloth Militia",
+    "type": "Unit",
+    "numero": "108"
+  },
+  {
+    "nom": "Ryloth Militia",
+    "type": "Unit",
+    "numero": "378"
+  },
+  {
+    "nom": "Sabine Wren",
+    "type": "Unit",
+    "numero": "195"
+  },
+  {
+    "nom": "Sabine Wren",
+    "type": "Unit",
+    "numero": "460"
+  },
+  {
+    "nom": "San Hill",
+    "type": "Unit",
+    "numero": "186"
+  },
+  {
+    "nom": "San Hill",
+    "type": "Unit",
+    "numero": "451"
+  },
+  {
+    "nom": "Sanctioner's Shuttle",
+    "type": "Unit",
+    "numero": "213"
+  },
+  {
+    "nom": "Sanctioner's Shuttle",
+    "type": "Unit",
+    "numero": "478"
+  },
+  {
+    "nom": "Satine Kryze",
+    "type": "Unit",
+    "numero": "047"
+  },
+  {
+    "nom": "Satine Kryze",
+    "type": "Unit",
+    "numero": "320"
+  },
+  {
+    "nom": "Savage Opress",
+    "type": "Unit",
+    "numero": "137"
+  },
+  {
+    "nom": "Savage Opress",
+    "type": "Unit",
+    "numero": "405"
+  },
+  {
+    "nom": "Saw Gerrera",
+    "type": "Unit",
+    "numero": "150"
+  },
+  {
+    "nom": "Saw Gerrera",
+    "type": "Unit",
+    "numero": "417"
+  },
+  {
+    "nom": "Self-Destruct",
+    "type": "Event",
+    "numero": "140"
+  },
+  {
+    "nom": "Self-Destruct",
+    "type": "Event",
+    "numero": "408"
+  },
+  {
+    "nom": "Senatorial Corvette",
+    "type": "Unit",
+    "numero": "148"
+  },
+  {
+    "nom": "Senatorial Corvette",
+    "type": "Unit",
+    "numero": "415"
+  },
+  {
+    "nom": "Separatist Commando",
+    "type": "Unit",
+    "numero": "180"
+  },
+  {
+    "nom": "Separatist Super Tank",
+    "type": "Unit",
+    "numero": "087"
+  },
+  {
+    "nom": "Separatist Super Tank",
+    "type": "Unit",
+    "numero": "359"
+  },
+  {
+    "nom": "Shaak Ti",
+    "type": "Unit",
+    "numero": "094"
+  },
+  {
+    "nom": "Shaak Ti",
+    "type": "Unit",
+    "numero": "366"
+  },
+  {
+    "nom": "Shadow Collective Camp",
+    "type": "Base",
+    "numero": "025"
+  },
+  {
+    "nom": "Shadow Collective Camp",
+    "type": "Base",
+    "numero": "300"
+  },
+  {
+    "nom": "Shadowed Intentions",
+    "type": "Upgrade",
+    "numero": "220"
+  },
+  {
+    "nom": "Shadowed Intentions",
+    "type": "Upgrade",
+    "numero": "485"
+  },
+  {
+    "nom": "Sly Moore",
+    "type": "Unit",
+    "numero": "211"
+  },
+  {
+    "nom": "Sly Moore",
+    "type": "Unit",
+    "numero": "476"
+  },
+  {
+    "nom": "Soldier of the 501st",
+    "type": "Unit",
+    "numero": "141"
+  },
+  {
+    "nom": "Soldier of the 501st",
+    "type": "Unit",
+    "numero": "409"
+  },
+  {
+    "nom": "Soulless One",
+    "type": "Unit",
+    "numero": "179"
+  },
+  {
+    "nom": "Soulless One",
+    "type": "Unit",
+    "numero": "445"
+  },
+  {
+    "nom": "Squad Support",
+    "type": "Upgrade",
+    "numero": "122"
+  },
+  {
+    "nom": "Squad Support",
+    "type": "Upgrade",
+    "numero": "392"
+  },
+  {
+    "nom": "Squadron of Vultures",
+    "type": "Unit",
+    "numero": "136"
+  },
+  {
+    "nom": "Squadron of Vultures",
+    "type": "Unit",
+    "numero": "404"
+  },
+  {
+    "nom": "Steadfast Senator",
+    "type": "Unit",
+    "numero": "105"
+  },
+  {
+    "nom": "Steadfast Senator",
+    "type": "Unit",
+    "numero": "376"
+  },
+  {
+    "nom": "Steela Gerrera",
+    "type": "Unit",
+    "numero": "146"
+  },
+  {
+    "nom": "Steela Gerrera",
+    "type": "Unit",
+    "numero": "414"
+  },
+  {
+    "nom": "Strategic Acumen",
+    "type": "Upgrade",
+    "numero": "120"
+  },
+  {
+    "nom": "Strategic Acumen",
+    "type": "Upgrade",
+    "numero": "390"
+  },
+  {
+    "nom": "Strategic Analysis",
+    "type": "Event",
+    "numero": "175"
+  },
+  {
+    "nom": "Strategic Analysis",
+    "type": "Event",
+    "numero": "441"
+  },
+  {
+    "nom": "Subjugating Starfighter",
+    "type": "Unit",
+    "numero": "112"
+  },
+  {
+    "nom": "Subjugating Starfighter",
+    "type": "Unit",
+    "numero": "382"
+  },
+  {
+    "nom": "Sundari",
+    "type": "Base",
+    "numero": "020"
+  },
+  {
+    "nom": "Sundari",
+    "type": "Base",
+    "numero": "295"
+  },
+  {
+    "nom": "Super Battle Droid",
+    "type": "Unit",
+    "numero": "230"
+  },
+  {
+    "nom": "Super Battle Droid",
+    "type": "Unit",
+    "numero": "493"
+  },
+  {
+    "nom": "Sword and Shield Maneuver",
+    "type": "Event",
+    "numero": "250"
+  },
+  {
+    "nom": "Sword and Shield Maneuver",
+    "type": "Event",
+    "numero": "510"
+  },
+  {
+    "nom": "Synchronized Strike",
+    "type": "Event",
+    "numero": "099"
+  },
+  {
+    "nom": "Synchronized Strike",
+    "type": "Event",
+    "numero": "370"
+  },
+  {
+    "nom": "Tactical Advantage",
+    "type": "Event",
+    "numero": "124"
+  },
+  {
+    "nom": "Tactical Droid Commander",
+    "type": "Unit",
+    "numero": "184"
+  },
+  {
+    "nom": "Tactical Droid Commander",
+    "type": "Unit",
+    "numero": "449"
+  },
+  {
+    "nom": "Take Captive",
+    "type": "Event",
+    "numero": "128"
+  },
+  {
+    "nom": "Take Captive",
+    "type": "Event",
+    "numero": "396"
+  },
+  {
+    "nom": "The Clone Wars",
+    "type": "Event",
+    "numero": "125"
+  },
+  {
+    "nom": "The Clone Wars",
+    "type": "Event",
+    "numero": "393"
+  },
+  {
+    "nom": "The Crystal City",
+    "type": "Base",
+    "numero": "021"
+  },
+  {
+    "nom": "The Crystal City",
+    "type": "Base",
+    "numero": "296"
+  },
+  {
+    "nom": "The Invasion of Christophsis",
+    "type": "Event",
+    "numero": "078"
+  },
+  {
+    "nom": "The Invasion of Christophsis",
+    "type": "Event",
+    "numero": "351"
+  },
+  {
+    "nom": "The Invisible Hand",
+    "type": "Unit",
+    "numero": "234"
+  },
+  {
+    "nom": "The Invisible Hand",
+    "type": "Unit",
+    "numero": "497"
+  },
+  {
+    "nom": "The Nest",
+    "type": "Base",
+    "numero": "027"
+  },
+  {
+    "nom": "The Nest",
+    "type": "Base",
+    "numero": "302"
+  },
+  {
+    "nom": "The Zillo Beast",
+    "type": "Unit",
+    "numero": "067"
+  },
+  {
+    "nom": "The Zillo Beast",
+    "type": "Unit",
+    "numero": "340"
+  },
+  {
+    "nom": "Tipoca City",
+    "type": "Base",
+    "numero": "024"
+  },
+  {
+    "nom": "Tipoca City",
+    "type": "Base",
+    "numero": "299"
+  },
+  {
+    "nom": "Trade Federation Shuttle",
+    "type": "Unit",
+    "numero": "060"
+  },
+  {
+    "nom": "Trade Federation Shuttle",
+    "type": "Unit",
+    "numero": "333"
+  },
+  {
+    "nom": "Tranquility",
+    "type": "Unit",
+    "numero": "246"
+  },
+  {
+    "nom": "Tranquility",
+    "type": "Unit",
+    "numero": "507"
+  },
+  {
+    "nom": "Tri-Droid Suppressor",
+    "type": "Unit",
+    "numero": "217"
+  },
+  {
+    "nom": "Tri-Droid Suppressor",
+    "type": "Unit",
+    "numero": "482"
+  },
+  {
+    "nom": "Twice the Pride",
+    "type": "Upgrade",
+    "numero": "155"
+  },
+  {
+    "nom": "Twice the Pride",
+    "type": "Upgrade",
+    "numero": "422"
+  },
+  {
+    "nom": "Unlimited Power",
+    "type": "Event",
+    "numero": "156"
+  },
+  {
+    "nom": "Unlimited Power",
+    "type": "Event",
+    "numero": "423"
+  },
+  {
+    "nom": "Unmasking the Conspiracy",
+    "type": "Event",
+    "numero": "223"
+  },
+  {
+    "nom": "Unmasking the Conspiracy",
+    "type": "Event",
+    "numero": "488"
+  },
+  {
+    "nom": "Unnatural Life",
+    "type": "Event",
+    "numero": "189"
+  },
+  {
+    "nom": "Unnatural Life",
+    "type": "Event",
+    "numero": "454"
+  },
+  {
+    "nom": "Unshakeable Will",
+    "type": "Upgrade",
+    "numero": "071"
+  },
+  {
+    "nom": "Unshakeable Will",
+    "type": "Upgrade",
+    "numero": "344"
+  },
+  {
+    "nom": "Vanguard Droid Bomber",
+    "type": "Unit",
+    "numero": "160"
+  },
+  {
+    "nom": "Vanguard Droid Bomber",
+    "type": "Unit",
+    "numero": "427"
+  },
+  {
+    "nom": "Vanquish",
+    "type": "Event",
+    "numero": "077"
+  },
+  {
+    "nom": "Vanquish",
+    "type": "Event",
+    "numero": "350"
+  },
+  {
+    "nom": "Volunteer Soldier",
+    "type": "Unit",
+    "numero": "254"
+  },
+  {
+    "nom": "Volunteer Soldier",
+    "type": "Unit",
+    "numero": "514"
+  },
+  {
+    "nom": "Vulture Interceptor Wing",
+    "type": "Unit",
+    "numero": "063"
+  },
+  {
+    "nom": "Vulture Interceptor Wing",
+    "type": "Unit",
+    "numero": "336"
+  },
+  {
+    "nom": "Warrior Drone",
+    "type": "Unit",
+    "numero": "057"
+  },
+  {
+    "nom": "Warrior Drone",
+    "type": "Unit",
+    "numero": "330"
+  },
+  {
+    "nom": "Wartime Profiteering",
+    "type": "Event",
+    "numero": "188"
+  },
+  {
+    "nom": "Wartime Profiteering",
+    "type": "Event",
+    "numero": "453"
+  },
+  {
+    "nom": "Wartime Trade Official",
+    "type": "Unit",
+    "numero": "032"
+  },
+  {
+    "nom": "Wartime Trade Official",
+    "type": "Unit",
+    "numero": "305"
+  },
+  {
+    "nom": "Wat Tambor",
+    "type": "Leader",
+    "numero": "006"
+  },
+  {
+    "nom": "Wat Tambor",
+    "type": "Leader",
+    "numero": "263"
+  },
+  {
+    "nom": "Wat Tambor",
+    "type": "Leader",
+    "numero": "281"
+  },
+  {
+    "nom": "Waylay",
+    "type": "Event",
+    "numero": "226"
+  },
+  {
+    "nom": "Wolf Pack Escort",
+    "type": "Unit",
+    "numero": "191"
+  },
+  {
+    "nom": "Wolf Pack Escort",
+    "type": "Unit",
+    "numero": "456"
+  },
+  {
+    "nom": "Yoda",
+    "type": "Leader",
+    "numero": "004"
+  },
+  {
+    "nom": "Yoda",
+    "type": "Leader",
+    "numero": "261"
+  },
+  {
+    "nom": "Yoda",
+    "type": "Leader",
+    "numero": "279"
+  },
+  {
+    "nom": "Ziro the Hutt",
+    "type": "Unit",
+    "numero": "185"
+  },
+  {
+    "nom": "Ziro the Hutt",
+    "type": "Unit",
+    "numero": "450"
+  }
+]

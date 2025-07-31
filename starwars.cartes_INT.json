@@ -1,0 +1,2056 @@
+[{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f27"
+  },
+  "nom": "332nd Stalwart",
+  "type": "Unit",
+  "numero": 240
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f28"
+  },
+  "nom": "41st Elite Corps",
+  "type": "Unit",
+  "numero": 45
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f2a"
+  },
+  "nom": "501st Liberator",
+  "type": "Unit",
+  "numero": 109
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f2c"
+  },
+  "nom": "A Fine Addition",
+  "type": "Event",
+  "numero": 40
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f2e"
+  },
+  "nom": "AT-TE Vanguard",
+  "type": "Unit",
+  "numero": 247
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f30"
+  },
+  "nom": "Aayla Secura",
+  "type": "Unit",
+  "numero": 96
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f32"
+  },
+  "nom": "Admiral Trench",
+  "type": "Unit",
+  "numero": 86
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f34"
+  },
+  "nom": "Admiral Yularen",
+  "type": "Unit",
+  "numero": 92
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f36"
+  },
+  "nom": "Advanced Recon Commando",
+  "type": "Unit",
+  "numero": 93
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f38"
+  },
+  "nom": "Aggrieved Parliamentarian",
+  "type": "Unit",
+  "numero": 252
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f3a"
+  },
+  "nom": "Ahsoka Tano",
+  "type": "Leader",
+  "numero": 11
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f3b"
+  },
+  "nom": "Ahsoka Tano",
+  "type": "Unit",
+  "numero": 194
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f3e"
+  },
+  "nom": "Ahsoka's Padawan Lightsaber",
+  "type": "Upgrade",
+  "numero": 248
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f3f"
+  },
+  "nom": "Aid from the Innocent",
+  "type": "Event",
+  "numero": 201
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f41"
+  },
+  "nom": "Anakin Skywalker",
+  "type": "Leader",
+  "numero": 12
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f42"
+  },
+  "nom": "Anakin Skywalker",
+  "type": "Unit",
+  "numero": 147
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f45"
+  },
+  "nom": "Anakin's Interceptor",
+  "type": "Unit",
+  "numero": 142
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f47"
+  },
+  "nom": "Armored Saber Tank",
+  "type": "Unit",
+  "numero": 245
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f49"
+  },
+  "nom": "Asajj Ventress",
+  "type": "Leader",
+  "numero": 14
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f4a"
+  },
+  "nom": "Asajj Ventress",
+  "type": "Unit",
+  "numero": 134
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f4e"
+  },
+  "nom": "Aurra Sing",
+  "type": "Unit",
+  "numero": 166
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f50"
+  },
+  "nom": "B1 Attack Platform",
+  "type": "Unit",
+  "numero": 133
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f52"
+  },
+  "nom": "B1 Security Team",
+  "type": "Unit",
+  "numero": 207
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f54"
+  },
+  "nom": "B2 Legionnaires",
+  "type": "Unit",
+  "numero": 113
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f56"
+  },
+  "nom": "Baktoid Spider Droid",
+  "type": "Unit",
+  "numero": 117
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f58"
+  },
+  "nom": "Barriss Offee",
+  "type": "Unit",
+  "numero": 42
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f5a"
+  },
+  "nom": "Batch Brothers",
+  "type": "Unit",
+  "numero": 144
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f5c"
+  },
+  "nom": "Battle Droid Escort",
+  "type": "Unit",
+  "numero": 229
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f5d"
+  },
+  "nom": "Battle Droid Legion",
+  "type": "Unit",
+  "numero": 235
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f5f"
+  },
+  "nom": "Blood Sport",
+  "type": "Event",
+  "numero": 173
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f61"
+  },
+  "nom": "Bo-Katan Kryze",
+  "type": "Unit",
+  "numero": 130
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f63"
+  },
+  "nom": "Bold Recon Commando",
+  "type": "Unit",
+  "numero": 161
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f65"
+  },
+  "nom": "Bold Resistance",
+  "type": "Event",
+  "numero": 153
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f67"
+  },
+  "nom": "Brain Invaders",
+  "type": "Unit",
+  "numero": 255
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f69"
+  },
+  "nom": "Breaking In",
+  "type": "Event",
+  "numero": 224
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f6b"
+  },
+  "nom": "Cad Bane",
+  "type": "Unit",
+  "numero": 187
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f6d"
+  },
+  "nom": "Calculating MagnaGuard",
+  "type": "Unit",
+  "numero": 33
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f6f"
+  },
+  "nom": "Captain Rex",
+  "type": "Leader",
+  "numero": 7
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f70"
+  },
+  "nom": "Captain Rex",
+  "type": "Unit",
+  "numero": 97
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f73"
+  },
+  "nom": "Captain Typho",
+  "type": "Unit",
+  "numero": 46
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f75"
+  },
+  "nom": "Caught in the Crossfire",
+  "type": "Event",
+  "numero": 176
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f77"
+  },
+  "nom": "Chancellor Palpatine",
+  "type": "Unit",
+  "numero": 203
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f79"
+  },
+  "nom": "Chancellor Palpatine // Darth Sidious",
+  "type": "Leader",
+  "numero": 17
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f7c"
+  },
+  "nom": "Clear the Field",
+  "type": "Event",
+  "numero": 199
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f7e"
+  },
+  "nom": "Clone",
+  "type": "Unit",
+  "numero": 116
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f80"
+  },
+  "nom": "Clone Cohort",
+  "type": "Upgrade",
+  "numero": 169
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f82"
+  },
+  "nom": "Clone Commander Cody",
+  "type": "Unit",
+  "numero": 114
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f84"
+  },
+  "nom": "Clone Dive Trooper",
+  "type": "Unit",
+  "numero": 205
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f86"
+  },
+  "nom": "Clone Heavy Gunner",
+  "type": "Unit",
+  "numero": 158
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f88"
+  },
+  "nom": "Compassionate Senator",
+  "type": "Unit",
+  "numero": 56
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f8a"
+  },
+  "nom": "Confederate Courier",
+  "type": "Unit",
+  "numero": 79
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f8c"
+  },
+  "nom": "Confederate Tri-Fighter",
+  "type": "Unit",
+  "numero": 132
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f8e"
+  },
+  "nom": "Consolidation of Power",
+  "type": "Event",
+  "numero": 89
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f90"
+  },
+  "nom": "Corner the Prey",
+  "type": "Event",
+  "numero": 139
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f92"
+  },
+  "nom": "Coruscant Guard",
+  "type": "Unit",
+  "numero": 106
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f94"
+  },
+  "nom": "Count Dooku",
+  "type": "Leader",
+  "numero": 5
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f95"
+  },
+  "nom": "Count Dooku",
+  "type": "Unit",
+  "numero": 138
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f99"
+  },
+  "nom": "Creative Thinking",
+  "type": "Event",
+  "numero": 200
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f9b"
+  },
+  "nom": "Daring Raid",
+  "type": "Event",
+  "numero": 170
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f9d"
+  },
+  "nom": "Darth Maul",
+  "type": "Unit",
+  "numero": 135
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734f9f"
+  },
+  "nom": "Daughter of Dathomir",
+  "type": "Unit",
+  "numero": 62
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fa1"
+  },
+  "nom": "Death by Droids",
+  "type": "Event",
+  "numero": 76
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fa3"
+  },
+  "nom": "Dendup's Loyalist",
+  "type": "Unit",
+  "numero": 159
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fa5"
+  },
+  "nom": "Devastating Gunship",
+  "type": "Unit",
+  "numero": 36
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fa7"
+  },
+  "nom": "Disaffected Senator",
+  "type": "Unit",
+  "numero": 157
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fa9"
+  },
+  "nom": "Disruptive Burst",
+  "type": "Event",
+  "numero": 75
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fab"
+  },
+  "nom": "Droid Cohort",
+  "type": "Upgrade",
+  "numero": 218
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fad"
+  },
+  "nom": "Droid Commando",
+  "type": "Unit",
+  "numero": 81
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734faf"
+  },
+  "nom": "Droid Deployment",
+  "type": "Event",
+  "numero": 237
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fb1"
+  },
+  "nom": "Droid Manufactory",
+  "type": "Base",
+  "numero": 22
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fb3"
+  },
+  "nom": "Droid Starfighter",
+  "type": "Unit",
+  "numero": 228
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fb5"
+  },
+  "nom": "Droideka Security",
+  "type": "Unit",
+  "numero": 37
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fb7"
+  },
+  "nom": "Drop In",
+  "type": "Event",
+  "numero": 251
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fb9"
+  },
+  "nom": "Duchess's Champion",
+  "type": "Unit",
+  "numero": 54
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fbb"
+  },
+  "nom": "Dwarf Spider Droid",
+  "type": "Unit",
+  "numero": 231
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fbd"
+  },
+  "nom": "Echo",
+  "type": "Unit",
+  "numero": 90
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fbf"
+  },
+  "nom": "Elite P-38 Starfighter",
+  "type": "Unit",
+  "numero": 181
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fc1"
+  },
+  "nom": "Encouraging Leadership",
+  "type": "Event",
+  "numero": 126
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fc3"
+  },
+  "nom": "Enfys Nest",
+  "type": "Unit",
+  "numero": 198
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fc5"
+  },
+  "nom": "Equalize",
+  "type": "Event",
+  "numero": 55
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fc7"
+  },
+  "nom": "Eta-2 Light Interceptor",
+  "type": "Unit",
+  "numero": 244
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fc9"
+  },
+  "nom": "Execute Order 66",
+  "type": "Event",
+  "numero": 239
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fcb"
+  },
+  "nom": "Falchion Ion Tank",
+  "type": "Unit",
+  "numero": 65
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fcd"
+  },
+  "nom": "Favorable Delegate",
+  "type": "Unit",
+  "numero": 208
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fcf"
+  },
+  "nom": "Finn",
+  "type": "Unit",
+  "numero": 53
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fd1"
+  },
+  "nom": "Fives",
+  "type": "Unit",
+  "numero": 216
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fd3"
+  },
+  "nom": "For The Republic",
+  "type": "Upgrade",
+  "numero": 51
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fd5"
+  },
+  "nom": "Foresight",
+  "type": "Upgrade",
+  "numero": 68
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fd7"
+  },
+  "nom": "Freelance Assassin",
+  "type": "Unit",
+  "numero": 212
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fd9"
+  },
+  "nom": "General Grievous",
+  "type": "Leader",
+  "numero": 15
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fda"
+  },
+  "nom": "General Grievous",
+  "type": "Unit",
+  "numero": 34
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fdd"
+  },
+  "nom": "General's Blade",
+  "type": "Upgrade",
+  "numero": 121
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fdf"
+  },
+  "nom": "General's Guardian",
+  "type": "Unit",
+  "numero": 83
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fe0"
+  },
+  "nom": "Geonosis Patrol Fighter",
+  "type": "Unit",
+  "numero": 215
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fe2"
+  },
+  "nom": "Gor",
+  "type": "Unit",
+  "numero": 118
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fe4"
+  },
+  "nom": "Grenade Strike",
+  "type": "Event",
+  "numero": 171
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fe6"
+  },
+  "nom": "Grievous Reassembly",
+  "type": "Event",
+  "numero": 73
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fe8"
+  },
+  "nom": "Grievous's Wheel Bike",
+  "type": "Upgrade",
+  "numero": 236
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fe9"
+  },
+  "nom": "Grim Resolve",
+  "type": "Event",
+  "numero": 172
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734feb"
+  },
+  "nom": "Guarding the Way",
+  "type": "Event",
+  "numero": 74
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fed"
+  },
+  "nom": "Guerilla Insurgency",
+  "type": "Event",
+  "numero": 177
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fef"
+  },
+  "nom": "Hailfire Tank",
+  "type": "Unit",
+  "numero": 233
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734ff1"
+  },
+  "nom": "Headhunter Squadron ",
+  "type": "Unit",
+  "numero": 253
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734ff3"
+  },
+  "nom": "Heavy Persuader Tank",
+  "type": "Unit",
+  "numero": 167
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734ff5"
+  },
+  "nom": "Hello There",
+  "type": "Event",
+  "numero": 52
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734ff7"
+  },
+  "nom": "Heroes on Both Sides",
+  "type": "Event",
+  "numero": 249
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734ff9"
+  },
+  "nom": "Hevy",
+  "type": "Unit",
+  "numero": 164
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734ffb"
+  },
+  "nom": "Hidden Sharpshooter",
+  "type": "Unit",
+  "numero": 214
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734ffd"
+  },
+  "nom": "Hold-Out Blaster",
+  "type": "Upgrade",
+  "numero": 256
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989734fff"
+  },
+  "nom": "Hotshot V-Wing",
+  "type": "Unit",
+  "numero": 209
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735001"
+  },
+  "nom": "Huyang",
+  "type": "Unit",
+  "numero": 110
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735003"
+  },
+  "nom": "I Have the High Ground",
+  "type": "Event",
+  "numero": 72
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735005"
+  },
+  "nom": "Impropriety Among Thieves",
+  "type": "Event",
+  "numero": 204
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735007"
+  },
+  "nom": "In Defense of Kamino",
+  "type": "Event",
+  "numero": 129
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735009"
+  },
+  "nom": "In Pursuit",
+  "type": "Event",
+  "numero": 221
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973500b"
+  },
+  "nom": "Independent Senator",
+  "type": "Unit",
+  "numero": 206
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973500d"
+  },
+  "nom": "Infantry of the 212th",
+  "type": "Unit",
+  "numero": 61
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973500f"
+  },
+  "nom": "Infiltrating Demolisher",
+  "type": "Unit",
+  "numero": 182
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735011"
+  },
+  "nom": "Jango Fett",
+  "type": "Leader",
+  "numero": 16
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735014"
+  },
+  "nom": "Jar Jar Binks",
+  "type": "Unit",
+  "numero": 202
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735016"
+  },
+  "nom": "Jesse",
+  "type": "Unit",
+  "numero": 145
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735018"
+  },
+  "nom": "Jyn Erso",
+  "type": "Unit",
+  "numero": 143
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973501a"
+  },
+  "nom": "KCM Mining Facility",
+  "type": "Base",
+  "numero": 26
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973501c"
+  },
+  "nom": "Kalani",
+  "type": "Unit",
+  "numero": 85
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973501e"
+  },
+  "nom": "Kashyyyk Defender",
+  "type": "Unit",
+  "numero": 44
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735020"
+  },
+  "nom": "Ki-Adi-Mundi",
+  "type": "Unit",
+  "numero": 64
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735022"
+  },
+  "nom": "Kit Fisto",
+  "type": "Unit",
+  "numero": 165
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735024"
+  },
+  "nom": "Knight of the Republic",
+  "type": "Unit",
+  "numero": 49
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735026"
+  },
+  "nom": "Kraken",
+  "type": "Unit",
+  "numero": 84
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735028"
+  },
+  "nom": "Lair of Grievous",
+  "type": "Base",
+  "numero": 23
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973502a"
+  },
+  "nom": "Lethal Crackdown",
+  "type": "Event",
+  "numero": 41
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973502c"
+  },
+  "nom": "Level 1313",
+  "type": "Base",
+  "numero": 29
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973502e"
+  },
+  "nom": "Low Altitude Gunship",
+  "type": "Unit",
+  "numero": 149
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735030"
+  },
+  "nom": "Luminara Unduli",
+  "type": "Unit",
+  "numero": 50
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735032"
+  },
+  "nom": "Lux Bonteri",
+  "type": "Unit",
+  "numero": 210
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735034"
+  },
+  "nom": "Mace Windu",
+  "type": "Leader",
+  "numero": 13
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735037"
+  },
+  "nom": "Mace Windu's Lightsaber",
+  "type": "Upgrade",
+  "numero": 152
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735039"
+  },
+  "nom": "MagnaGuard Wing Leader",
+  "type": "Unit",
+  "numero": 82
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973503b"
+  },
+  "nom": "Malevolence",
+  "type": "Unit",
+  "numero": 39
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973503d"
+  },
+  "nom": "Manufactured Soldiers",
+  "type": "Event",
+  "numero": 102
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973503f"
+  },
+  "nom": "Mas Amedda",
+  "type": "Unit",
+  "numero": 101
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735041"
+  },
+  "nom": "Maul",
+  "type": "Leader",
+  "numero": 9
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735044"
+  },
+  "nom": "Merciless Contest",
+  "type": "Event",
+  "numero": 238
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735046"
+  },
+  "nom": "Mister Bones",
+  "type": "Unit",
+  "numero": 154
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735048"
+  },
+  "nom": "Morgan Elsbeth",
+  "type": "Unit",
+  "numero": 35
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973504a"
+  },
+  "nom": "Multi-Troop Transport",
+  "type": "Unit",
+  "numero": 66
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973504c"
+  },
+  "nom": "Nala Se",
+  "type": "Leader",
+  "numero": 1
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973504f"
+  },
+  "nom": "Nameless Valor",
+  "type": "Upgrade",
+  "numero": 119
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735051"
+  },
+  "nom": "Now There Are Two of Them",
+  "type": "Event",
+  "numero": 225
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735053"
+  },
+  "nom": "Nute Gunray",
+  "type": "Leader",
+  "numero": 2
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735056"
+  },
+  "nom": "OOM-Series Officer",
+  "type": "Unit",
+  "numero": 131
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735058"
+  },
+  "nom": "Obedient Vanguard",
+  "type": "Unit",
+  "numero": 104
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973505a"
+  },
+  "nom": "Obi-Wan Kenobi",
+  "type": "Leader",
+  "numero": 3
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973505d"
+  },
+  "nom": "Obi-Wan's Aethersprite",
+  "type": "Unit",
+  "numero": 48
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973505f"
+  },
+  "nom": "Old Access Codes",
+  "type": "Upgrade",
+  "numero": 168
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735061"
+  },
+  "nom": "On Top of Things",
+  "type": "Upgrade",
+  "numero": 219
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735063"
+  },
+  "nom": "On the Doorstep",
+  "type": "Event",
+  "numero": 190
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735065"
+  },
+  "nom": "Open Fire",
+  "type": "Event",
+  "numero": 174
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735066"
+  },
+  "nom": "Osi Sobeck",
+  "type": "Unit",
+  "numero": 115
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735068"
+  },
+  "nom": "Outflank",
+  "type": "Event",
+  "numero": 123
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735069"
+  },
+  "nom": "Outspoken Representative",
+  "type": "Unit",
+  "numero": 43
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973506b"
+  },
+  "nom": "Padawan Starfighter",
+  "type": "Unit",
+  "numero": 58
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973506d"
+  },
+  "nom": "Padmé Amidala",
+  "type": "Leader",
+  "numero": 8
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973506e"
+  },
+  "nom": "Padmé Amidala",
+  "type": "Unit",
+  "numero": 192
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735072"
+  },
+  "nom": "Patrolling AAT",
+  "type": "Unit",
+  "numero": 232
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735074"
+  },
+  "nom": "Patrolling V-Wing",
+  "type": "Unit",
+  "numero": 107
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735075"
+  },
+  "nom": "Pau City",
+  "type": "Base",
+  "numero": 19
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735077"
+  },
+  "nom": "Pelta Supply Frigate",
+  "type": "Unit",
+  "numero": 95
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735079"
+  },
+  "nom": "Perilous Position",
+  "type": "Upgrade",
+  "numero": 70
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973507b"
+  },
+  "nom": "Petition the Senate",
+  "type": "Event",
+  "numero": 100
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973507d"
+  },
+  "nom": "Petranaki Arena",
+  "type": "Base",
+  "numero": 28
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973507f"
+  },
+  "nom": "Phase I Clone Trooper",
+  "type": "Unit",
+  "numero": 241
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735081"
+  },
+  "nom": "Phase II Clone Trooper",
+  "type": "Unit",
+  "numero": 242
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735083"
+  },
+  "nom": "Planetary Invasion",
+  "type": "Event",
+  "numero": 178
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735085"
+  },
+  "nom": "Plo Koon",
+  "type": "Unit",
+  "numero": 196
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735087"
+  },
+  "nom": "Poggle the Lesser",
+  "type": "Unit",
+  "numero": 80
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735089"
+  },
+  "nom": "Political Pressure",
+  "type": "Event",
+  "numero": 222
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973508b"
+  },
+  "nom": "Pre Vizsla",
+  "type": "Leader",
+  "numero": 10
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973508e"
+  },
+  "nom": "Prisoner of War",
+  "type": "Event",
+  "numero": 227
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735090"
+  },
+  "nom": "Private Manufacturing",
+  "type": "Event",
+  "numero": 257
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735092"
+  },
+  "nom": "Providence Destroyer",
+  "type": "Unit",
+  "numero": 38
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735094"
+  },
+  "nom": "Pyke Palace",
+  "type": "Base",
+  "numero": 30
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735096"
+  },
+  "nom": "Pyrrhic Assault",
+  "type": "Event",
+  "numero": 103
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735098"
+  },
+  "nom": "Quinlan Vos",
+  "type": "Leader",
+  "numero": 18
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973509b"
+  },
+  "nom": "R2-D2",
+  "type": "Unit",
+  "numero": 193
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973509d"
+  },
+  "nom": "Reckless Torrent",
+  "type": "Unit",
+  "numero": 162
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973509f"
+  },
+  "nom": "Relentless Rocket Droid",
+  "type": "Unit",
+  "numero": 163
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350a1"
+  },
+  "nom": "Reprocess",
+  "type": "Event",
+  "numero": 88
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350a3"
+  },
+  "nom": "Republic ARC-170",
+  "type": "Unit",
+  "numero": 111
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350a5"
+  },
+  "nom": "Republic Attack Pod",
+  "type": "Unit",
+  "numero": 197
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350a7"
+  },
+  "nom": "Republic Commando",
+  "type": "Unit",
+  "numero": 243
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350a9"
+  },
+  "nom": "Republic Defense Carrier",
+  "type": "Unit",
+  "numero": 98
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350ab"
+  },
+  "nom": "Republic Tactical Officer",
+  "type": "Unit",
+  "numero": 91
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350ad"
+  },
+  "nom": "Resolute",
+  "type": "Unit",
+  "numero": 151
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350af"
+  },
+  "nom": "Resupply",
+  "type": "Event",
+  "numero": 127
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350b1"
+  },
+  "nom": "Roger Roger",
+  "type": "Upgrade",
+  "numero": 69
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350b3"
+  },
+  "nom": "Royal Guard Attaché",
+  "type": "Unit",
+  "numero": 59
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350b5"
+  },
+  "nom": "Rune Haako",
+  "type": "Unit",
+  "numero": 31
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350b7"
+  },
+  "nom": "Rush Clovis",
+  "type": "Unit",
+  "numero": 183
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350b9"
+  },
+  "nom": "Ryloth Militia",
+  "type": "Unit",
+  "numero": 108
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350bb"
+  },
+  "nom": "Sabine Wren",
+  "type": "Unit",
+  "numero": 195
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350bd"
+  },
+  "nom": "San Hill",
+  "type": "Unit",
+  "numero": 186
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350bf"
+  },
+  "nom": "Sanctioner's Shuttle",
+  "type": "Unit",
+  "numero": 213
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350c1"
+  },
+  "nom": "Satine Kryze",
+  "type": "Unit",
+  "numero": 47
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350c3"
+  },
+  "nom": "Savage Opress",
+  "type": "Unit",
+  "numero": 137
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350c5"
+  },
+  "nom": "Saw Gerrera",
+  "type": "Unit",
+  "numero": 150
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350c7"
+  },
+  "nom": "Self-Destruct",
+  "type": "Event",
+  "numero": 140
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350c9"
+  },
+  "nom": "Senatorial Corvette",
+  "type": "Unit",
+  "numero": 148
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350cb"
+  },
+  "nom": "Separatist Commando",
+  "type": "Unit",
+  "numero": 180
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350cc"
+  },
+  "nom": "Separatist Super Tank",
+  "type": "Unit",
+  "numero": 87
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350ce"
+  },
+  "nom": "Shaak Ti",
+  "type": "Unit",
+  "numero": 94
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350d0"
+  },
+  "nom": "Shadow Collective Camp",
+  "type": "Base",
+  "numero": 25
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350d2"
+  },
+  "nom": "Shadowed Intentions",
+  "type": "Upgrade",
+  "numero": 220
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350d4"
+  },
+  "nom": "Sly Moore",
+  "type": "Unit",
+  "numero": 211
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350d6"
+  },
+  "nom": "Soldier of the 501st",
+  "type": "Unit",
+  "numero": 141
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350d8"
+  },
+  "nom": "Soulless One",
+  "type": "Unit",
+  "numero": 179
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350da"
+  },
+  "nom": "Squad Support",
+  "type": "Upgrade",
+  "numero": 122
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350dc"
+  },
+  "nom": "Squadron of Vultures",
+  "type": "Unit",
+  "numero": 136
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350de"
+  },
+  "nom": "Steadfast Senator",
+  "type": "Unit",
+  "numero": 105
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350e0"
+  },
+  "nom": "Steela Gerrera",
+  "type": "Unit",
+  "numero": 146
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350e2"
+  },
+  "nom": "Strategic Acumen",
+  "type": "Upgrade",
+  "numero": 120
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350e4"
+  },
+  "nom": "Strategic Analysis",
+  "type": "Event",
+  "numero": 175
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350e6"
+  },
+  "nom": "Subjugating Starfighter",
+  "type": "Unit",
+  "numero": 112
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350e8"
+  },
+  "nom": "Sundari",
+  "type": "Base",
+  "numero": 20
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350ea"
+  },
+  "nom": "Super Battle Droid",
+  "type": "Unit",
+  "numero": 230
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350ec"
+  },
+  "nom": "Sword and Shield Maneuver",
+  "type": "Event",
+  "numero": 250
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350ee"
+  },
+  "nom": "Synchronized Strike",
+  "type": "Event",
+  "numero": 99
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350f0"
+  },
+  "nom": "Tactical Advantage",
+  "type": "Event",
+  "numero": 124
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350f1"
+  },
+  "nom": "Tactical Droid Commander",
+  "type": "Unit",
+  "numero": 184
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350f3"
+  },
+  "nom": "Take Captive",
+  "type": "Event",
+  "numero": 128
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350f5"
+  },
+  "nom": "The Clone Wars",
+  "type": "Event",
+  "numero": 125
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350f7"
+  },
+  "nom": "The Crystal City",
+  "type": "Base",
+  "numero": 21
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350f9"
+  },
+  "nom": "The Invasion of Christophsis",
+  "type": "Event",
+  "numero": 78
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350fb"
+  },
+  "nom": "The Invisible Hand",
+  "type": "Unit",
+  "numero": 234
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350fd"
+  },
+  "nom": "The Nest",
+  "type": "Base",
+  "numero": 27
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d0649897350ff"
+  },
+  "nom": "The Zillo Beast",
+  "type": "Unit",
+  "numero": 67
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735101"
+  },
+  "nom": "Tipoca City",
+  "type": "Base",
+  "numero": 24
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735103"
+  },
+  "nom": "Trade Federation Shuttle",
+  "type": "Unit",
+  "numero": 60
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735105"
+  },
+  "nom": "Tranquility",
+  "type": "Unit",
+  "numero": 246
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735107"
+  },
+  "nom": "Tri-Droid Suppressor",
+  "type": "Unit",
+  "numero": 217
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735109"
+  },
+  "nom": "Twice the Pride",
+  "type": "Upgrade",
+  "numero": 155
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973510b"
+  },
+  "nom": "Unlimited Power",
+  "type": "Event",
+  "numero": 156
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973510d"
+  },
+  "nom": "Unmasking the Conspiracy",
+  "type": "Event",
+  "numero": 223
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973510f"
+  },
+  "nom": "Unnatural Life",
+  "type": "Event",
+  "numero": 189
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735111"
+  },
+  "nom": "Unshakeable Will",
+  "type": "Upgrade",
+  "numero": 71
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735113"
+  },
+  "nom": "Vanguard Droid Bomber",
+  "type": "Unit",
+  "numero": 160
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735115"
+  },
+  "nom": "Vanquish",
+  "type": "Event",
+  "numero": 77
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735117"
+  },
+  "nom": "Volunteer Soldier",
+  "type": "Unit",
+  "numero": 254
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735119"
+  },
+  "nom": "Vulture Interceptor Wing",
+  "type": "Unit",
+  "numero": 63
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973511b"
+  },
+  "nom": "Warrior Drone",
+  "type": "Unit",
+  "numero": 57
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973511d"
+  },
+  "nom": "Wartime Profiteering",
+  "type": "Event",
+  "numero": 188
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973511f"
+  },
+  "nom": "Wartime Trade Official",
+  "type": "Unit",
+  "numero": 32
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735121"
+  },
+  "nom": "Wat Tambor",
+  "type": "Leader",
+  "numero": 6
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735124"
+  },
+  "nom": "Waylay",
+  "type": "Event",
+  "numero": 226
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735125"
+  },
+  "nom": "Wolf Pack Escort",
+  "type": "Unit",
+  "numero": 191
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d064989735127"
+  },
+  "nom": "Yoda",
+  "type": "Leader",
+  "numero": 4
+},
+{
+  "_id": {
+    "$oid": "68878c5d6c8d06498973512a"
+  },
+  "nom": "Ziro the Hutt",
+  "type": "Unit",
+  "numero": 185
+}]

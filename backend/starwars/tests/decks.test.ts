@@ -156,7 +156,7 @@ describe('Tests des routes /api/decks', () => {
         expect(res.body.error).toContain("ID de deck invalide");
     });
 
-        it('DELETE /api/decks/supprimer/:id - devrait retouner un erreur que le id est pas bon', async () => {
+    it('DELETE /api/decks/supprimer/:id - devrait retouner un erreur que le id est pas bon', async () => {
         const res = await request(app).delete(`/api/decks/supprimer/6888e68bb`);
         expect(res.status).toBe(404);
         expect(res.body.error).toContain("ID de deck invalide");

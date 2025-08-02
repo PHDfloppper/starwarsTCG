@@ -6,7 +6,7 @@ import { IReq, IRes } from '../common/util/misc';
 
 // **** Functions **** //
 
-async function obtenirTout(_: IReq, res: IRes) {
+async function obtenirTout(req: IReq, res: IRes) {
   const cartes = await CarteService.obtenirTout();
   return res.status(HttpStatusCodes.OK).json({ cartes });
 }

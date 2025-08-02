@@ -9,6 +9,7 @@ type Deck = {
   leader: string;
   createur: string;
   base: string;
+  victoires: number;
 };
 
 const ListeDecks: React.FC = () => {
@@ -17,6 +18,8 @@ const ListeDecks: React.FC = () => {
   const [erreur, setErreur] = useState<string | null>(null);
   const naviguer = useNavigate();
   const [recherche, setRecherche] = useState('');
+  const [tri, setTri] = useState<'nom' | 'victoires-desc' | 'victoires-asc'>('nom');
+  const [decksFiltres, setDecksFiltre] = useState<Deck[]>([]);
 
   const handleClique = async (deckId: string) => {
     naviguer(`/deckDetails/${deckId}`);
@@ -33,8 +36,9 @@ const ListeDecks: React.FC = () => {
         }
         const response = await axios.get('http://localhost:3000/api/decks/all');
         const tousLesDecks: Deck[] = response.data.decks;
-        const decksFiltres = tousLesDecks.filter(deck => deck.createur === utilisateur);
-        setDecks(decksFiltres);
+        const decksUtilisateur = tousLesDecks.filter(deck => deck.createur === utilisateur);
+        setDecks(decksUtilisateur);
+        console.log("decks remplies");
       } catch (err) {
         setErreur('Erreur lors de la récupération des decks.');
         console.error(err);
@@ -46,12 +50,32 @@ const ListeDecks: React.FC = () => {
     fetchDecks();
   }, []);
 
+  useEffect(() => {
+    const decksTrier = async () => {
+      const rechercheDeck = (decks.filter(deck => deck.nom.toLowerCase().includes(recherche.toLowerCase())));
+      const trie = ([...rechercheDeck].sort((a, b) => { //source: https://www.w3schools.com/js/js_array_sort.asp
+        if (tri == 'nom') {
+          return a.nom.localeCompare(b.nom); //source: https://stackoverflow.com/questions/6712034/sort-array-by-firstname-alphabetically-in-javascript
+        }
+        else if (tri == 'victoires-desc') {
+          return b.victoires - a.victoires;
+        }
+        else if (tri == 'victoires-asc') {
+          return a.victoires - b.victoires;
+        }
+        else {
+          return 0;
+        }
+      }));
+      setDecksFiltre(trie);
+      console.log("decks trié")
+    };
+
+    decksTrier();
+  }, [recherche, tri, decks]);
+
   if (chargement) return <p>Chargement...</p>;
   if (erreur) return <p style={{ color: 'red' }}>{erreur}</p>;
-
-  const decksFiltres = decks.filter(deck =>
-    deck.nom.toLowerCase().includes(recherche.toLowerCase())
-  );
 
   return (
     <div className="liste-decks-container">
@@ -67,6 +91,14 @@ const ListeDecks: React.FC = () => {
           value={recherche}
           onChange={(e) => setRecherche(e.target.value)}
         />
+        <div style={{ marginBottom: '1rem' }}>
+          <label htmlFor="tri">Trier par : </label>
+          <select id="tri" value={tri} onChange={(e) => setTri(e.target.value as typeof tri)}>
+            <option value="nom">Nom (A-Z)</option>
+            <option value="victoires-desc">Victoires (décroissant)</option>
+            <option value="victoires-asc">Victoires (croissant)</option>
+          </select>
+        </div>
         <button onClick={() => naviguer('/ajouterDeck')}>
           Ajouter un deck
         </button>
@@ -81,6 +113,7 @@ const ListeDecks: React.FC = () => {
               <th>Nom</th>
               <th>Leader</th>
               <th>Base</th>
+              <th>victoires</th>
             </tr>
           </thead>
           <tbody>
@@ -89,6 +122,7 @@ const ListeDecks: React.FC = () => {
                 <td>{deck.nom}</td>
                 <td>{deck.leader}</td>
                 <td>{deck.base}</td>
+                <td>{deck.victoires}</td>
                 <td>
                   <button onClick={() => handleClique(deck._id)}>Détail</button>
                 </td>

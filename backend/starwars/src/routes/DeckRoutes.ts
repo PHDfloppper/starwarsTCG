@@ -19,9 +19,9 @@ async function chercherParId(req: IReq, res: IRes) {
 
 async function ajouter(req: IReq<{ deck: IDeck }>, res: IRes) {
   let { deck } = req.body;
-  try{
-  const deckAjouter = await DeckService.ajouter(deck);
-  return res.status(HttpStatusCodes.CREATED).json({ deck: deckAjouter.toObject() });
+  try {
+    const deckAjouter = await DeckService.ajouter(deck);
+    return res.status(HttpStatusCodes.CREATED).json({ deck: deckAjouter.toObject() });
   } catch (error) {
     return res.status(HttpStatusCodes.BAD_REQUEST).json({ error: error.message });
   }
@@ -29,13 +29,24 @@ async function ajouter(req: IReq<{ deck: IDeck }>, res: IRes) {
 
 async function modifier(req: IReq<{ deck: IDeck }>, res: IRes) {
   const id = req.params.id;
-  try{
-  let { deck } = req.body;
-  deck = await DeckService.modifier(id,deck);
-  return res.status(HttpStatusCodes.OK).json({ deck });
-} catch (error) {
-  return res.status(HttpStatusCodes.BAD_REQUEST).json({ error: error.message });
+  try {
+    let { deck } = req.body;
+    deck = await DeckService.modifier(id, deck);
+    return res.status(HttpStatusCodes.OK).json({ deck });
+  } catch (error) {
+    return res.status(HttpStatusCodes.BAD_REQUEST).json({ error: error.message });
+  }
+
 }
+
+async function ajouterVictoire(req: IReq, res: IRes) {
+  const id = req.params.id;
+  try {
+    await DeckService.ajouterVictoire(id);
+    return res.status(HttpStatusCodes.OK).json({ message: "victoire ajouté" });
+  } catch (error) {
+    return res.status(HttpStatusCodes.BAD_REQUEST).json({ error: error.message });
+  }
 
 }
 
@@ -57,5 +68,6 @@ export default {
   chercherParId,
   ajouter,
   modifier,
+  ajouterVictoire,
   supprimer,
 } as const;

@@ -54,6 +54,21 @@ async function modifier(id: string, deck: IDeck): Promise<IDeck> {
   return deckToUpdate;
 }
 
+async function ajouterVictoire(id: string): Promise<IDeck> {
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    throw new Error('ID de deck invalide');
+  }
+  const deckToUpdate = await Deck.findById(id);
+  if (deckToUpdate === null) {
+    throw new Error('deck non trouvé');
+  }
+
+  deckToUpdate.victoires = deckToUpdate.victoires + 1;
+  await deckToUpdate.save();
+
+  return deckToUpdate;
+}
+
 async function supprimer(id: string): Promise<{ message: string }> {
   if (!mongoose.Types.ObjectId.isValid(id)) {
     throw new Error('ID de deck invalide');
@@ -72,5 +87,6 @@ export default {
   chercherParId,
   ajouter,
   modifier,
+  ajouterVictoire,
   supprimer,
 } as const;

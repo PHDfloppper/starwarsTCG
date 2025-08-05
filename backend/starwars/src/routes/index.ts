@@ -26,6 +26,7 @@ decksRouter.get(Paths.Decks.Get, DeckRoutes.obtenirTout);
 decksRouter.get(Paths.Decks.GetId, DeckRoutes.chercherParId);
 decksRouter.post(Paths.Decks.Post , DeckRoutes.ajouter);
 decksRouter.put(Paths.Decks.Put, DeckRoutes.modifier);
+decksRouter.put(Paths.Decks.PutVictoire, DeckRoutes.ajouterVictoire);
 decksRouter.delete(Paths.Decks.Delete, DeckRoutes.supprimer);
 apiRouter.use(Paths.Decks.Base, decksRouter);
 

@@ -6,6 +6,7 @@ export interface IPartie extends Document {
   deckUtilise: string;
   resultat: 'victoire' | 'défaite';
   commentaires?: string;
+  utilisateur: string;
 }
 
 const PartieSchema: Schema = new Schema(
@@ -32,6 +33,10 @@ const PartieSchema: Schema = new Schema(
     },
     commentaires: {
       type: String,
+    },
+    utilisateur:{
+      type: String,
+      required: [true, 'L utilisateur de la partie est obligatoire.'],
     },
   },
   { timestamps: true }

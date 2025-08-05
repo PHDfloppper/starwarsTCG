@@ -18,6 +18,10 @@ const AjoutDeck: React.FC = () => {
     const [message, setMessage] = useState('');
     const naviguer = useNavigate();
 
+    /**
+     * 
+     * fonction pour ajouter une carte dans le deck (ajoute la carte au tableau de carte, ne fait pas requete tout de suite)
+     */
     const ajouterCarte = () => {
         if (numeroCarte <= 0 || quantiteCarte <= 0) return;
 
@@ -26,8 +30,8 @@ const AjoutDeck: React.FC = () => {
             return;
         }
 
-        setCartes((prev) => [
-            ...prev,
+        setCartes((cartes) => [
+            ...cartes,
             { numero: numeroCarte, quantite: quantiteCarte },
         ]);
 
@@ -37,16 +41,19 @@ const AjoutDeck: React.FC = () => {
         setMessage('');
     };
 
-    const handleAjout = async (e: React.FormEvent) => {
-        e.preventDefault();
+    /**
+     * 
+     * fonction pour faire la requête d'ajout de deck
+     */
+    const handleAjout = async (e: React.FormEvent<HTMLFormElement>) => {e.preventDefault(); //empêche la page de reload source: https://stackoverflow.com/questions/56562153/react-typescript-onsubmit-e-preventdefault-not-working
 
         try {
             const nouveauDeck = {
                 deck: {
-                    nom,
-                    description,
-                    leader,
-                    base,
+                    nom: nom,
+                    description: description,
+                    leader: leader,
+                    base: base,
                     createur: localStorage.getItem('utilisateur'),
                     victoires: 0,
                     cartes: cartes,

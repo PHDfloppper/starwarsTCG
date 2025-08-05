@@ -17,6 +17,7 @@ export default {
     Get: '/all',
     GetId: '/:id',
     Post: '/ajouter',
+    PutVictoire: '/victoire/:id',
     Put: '/modifier/:id',
     Delete: '/supprimer/:id',
   },

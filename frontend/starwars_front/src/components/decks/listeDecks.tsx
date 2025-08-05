@@ -25,10 +25,13 @@ const ListeDecks: React.FC = () => {
     naviguer(`/deckDetails/${deckId}`);
   };
 
+  /**
+   * useEffect qui récupère les decks selon l'utilisateur connecté au chargement de la page.
+   */
   useEffect(() => {
     const fetchDecks = async () => {
       try {
-        const utilisateur = localStorage.getItem('utilisateur'); // 👈 récupère l'utilisateur
+        const utilisateur = localStorage.getItem('utilisateur');
         if (!utilisateur) {
           setErreur("utilisateur pas connecté");
           setChargement(false);
@@ -50,6 +53,9 @@ const ListeDecks: React.FC = () => {
     fetchDecks();
   }, []);
 
+  /**
+   * useEffect qui gère la recherche de deck par nom et le filtre des decks.
+   */
   useEffect(() => {
     const decksTrier = async () => {
       const rechercheDeck = (decks.filter(deck => deck.nom.toLowerCase().includes(recherche.toLowerCase())));
@@ -87,7 +93,7 @@ const ListeDecks: React.FC = () => {
       <div style={{ marginBottom: '1rem' }}>
         <input
           type="text"
-          placeholder="Rechercher par nom..."
+          placeholder="Rechercher par nom"
           value={recherche}
           onChange={(e) => setRecherche(e.target.value)}
         />

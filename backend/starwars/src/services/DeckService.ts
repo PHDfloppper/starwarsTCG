@@ -20,6 +20,10 @@ async function modifier(id:string, deck: IDeck): Promise<IDeck> {
   return DeckRepo.modifier(id,deck);
 }
 
+async function ajouterVictoire(id:string): Promise<IDeck> {
+  return DeckRepo.ajouterVictoire(id);
+}
+
 async function supprimer(id: string): Promise<{ message: string }> {
   return DeckRepo.supprimer(id);
 }
@@ -31,5 +35,6 @@ export default {
   chercherParId,
   ajouter,
   modifier,
+  ajouterVictoire,
   supprimer,
 } as const;

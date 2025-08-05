@@ -3,16 +3,12 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './ListeCartes.css';
 
-type ConnexionProps = {
-  connexion: (nomUser: string) => void;
-};
-
 type Utilisateur = {
   nom: string;
   motDePasse: string;
 };
 
-const Connexion: React.FC<ConnexionProps> = ({ connexion }) => {
+const Connexion: React.FC = () => {
   const [utilisateur, setUtilisateur] = useState<Utilisateur>({ nom: '', motDePasse: '' });
   const [erreur, setErreur] = useState<string | null>(null);
   const [chargement, setChargement] = useState(false);
@@ -36,14 +32,24 @@ const Connexion: React.FC<ConnexionProps> = ({ connexion }) => {
 
       if (response.data.message === 'true') {
         localStorage.setItem('utilisateur', response.data.utilisateur);
-        connexion(response.data.utilisateur);
         naviguer('/');
       } else {
         setErreur('Nom ou mot de passe incorrect.');
       }
     } catch (err) {
       console.error(err);
-      setErreur('Erreur lors de la connexion.');
+      if (axios.isAxiosError(err)) {
+        console.error('Erreur Axios :', err.response?.data);
+        if (err.response?.data.message == "false") {
+          setErreur('Nom ou mot de passe incorrect.');
+        }
+        else {
+          setErreur('Erreur lors de la connexion.');
+        }
+      }
+      else {
+        setErreur('Erreur lors de la connexion.');
+      }
     } finally {
       setChargement(false);
     }

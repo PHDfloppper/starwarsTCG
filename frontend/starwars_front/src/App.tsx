@@ -4,18 +4,23 @@ import './App.css';
 import ListeCartes from './components/listeCarte';
 import ListeDecks from './components/decks/listeDecks';
 import ListeParties from './components/parties/listeParties';
-import Connexion from './components/connexion';
+import Connexion from './components/utilisateur/connexion';
 import DetailsDeck from './components/decks/detailsDeck';
 import AjoutDeck from './components/decks/ajoutDeck';
-import ModifDeck from './components/decks/modifDeck';
+import ModifDeck from './components/decks//modifDeck';
+import AjoutPartie from './components/parties/ajoutPartie';
+import DetaisPartie from './components/parties/detailsPartie';
+import ModifPartie from './components/parties/ModifierPartie';
+import AjoutUtilisateur from './components/utilisateur/ajoutUtilisateur';
 
-function Home({ nomUser }: { nomUser: string | null }) {
+function Home() {
 
 
   const handleClique = async () => {
     localStorage.setItem('utilisateur', "");
     window.location.reload();
   };
+  const nomUser = localStorage.getItem('utilisateur'); //source: https://www.w3schools.com/jsref/prop_win_localstorage.asp
 
   return (
     <>
@@ -42,9 +47,14 @@ function Home({ nomUser }: { nomUser: string | null }) {
             <button onClick={handleClique}>Déconnexion</button>
           </div>
         ) : (
-          <Link to="/connexion">
-            <button>Connexion</button>
-          </Link>
+          <div>
+            <Link to="/connexion">
+              <button>Connexion</button>
+            </Link>
+            <Link to="/ajoutUtilisateur">
+              <button>Création de compte</button>
+            </Link>
+          </div>
         )}
         <Link to="/decks">
           <button>Voir les decks</button>
@@ -59,24 +69,21 @@ function Home({ nomUser }: { nomUser: string | null }) {
 
 function App() {
 
-  const [nomUser, setNomUser] = useState<string | null>(() => {
-    return localStorage.getItem('utilisateur'); //source: https://www.w3schools.com/jsref/prop_win_localstorage.asp
-  });
-
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home nomUser={nomUser} />} />
+        <Route path="/" element={<Home />} />
         <Route path="/cartes" element={<ListeCartes />} />
         <Route path="/decks" element={<ListeDecks />} />
         <Route path="/parties" element={<ListeParties />} />
-        <Route
-          path="/connexion"
-          element={<Connexion connexion={(nom) => setNomUser(nom)} />}
-        />
-        <Route path="/deckDetails/:iddeck" element={<DetailsDeck />}/>
+        <Route path="/ajouterPartie" element={<AjoutPartie />} />
+        <Route path="/PartieDetails/:idPartie" element={<DetaisPartie />} />
+        <Route path="/modifierPartie/:idPartie" element={<ModifPartie />} />
+        <Route path="/connexion" element={<Connexion />} />
+        <Route path="/ajoutUtilisateur" element={<AjoutUtilisateur />} />
+        <Route path="/deckDetails/:iddeck" element={<DetailsDeck />} />
         <Route path="/ajouterDeck" element={<AjoutDeck />} />
-        <Route path="/modifierDeck/:iddeck" element={<ModifDeck />}/>
+        <Route path="/modifierDeck/:iddeck" element={<ModifDeck />} />
       </Routes>
     </BrowserRouter>
   );

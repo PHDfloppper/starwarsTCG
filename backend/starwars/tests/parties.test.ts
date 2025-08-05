@@ -11,6 +11,7 @@ const partieValide = {
     deckUtilise: "Deck Test",
     resultat: "victoire",
     commentaires: "Test de partie.",
+    utilisateur: "test",
 };
 
 const partieNonValide = {
@@ -18,6 +19,7 @@ const partieNonValide = {
     adversaire: "JoueurTest",
     resultat: "victoire",
     commentaires: "Test de partie.",
+    utilisateur: "test",
 };
 
 let idPartieCreee = "";

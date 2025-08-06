@@ -5,6 +5,7 @@ export interface IUtilisateur extends Document {
   motDePasse: string;
 }
 
+//schema partiellement généré par : OpenAI. (2023). ChatGPT (version 3 août 2023) [Modèle massif de langage]. https://chat.openai.com/chat
 const UtilisateurSchema: Schema = new Schema({
   nom: {
     type: String,

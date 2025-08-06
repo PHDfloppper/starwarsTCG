@@ -9,6 +9,7 @@ export interface IPartie extends Document {
   utilisateur: string;
 }
 
+//schema partiellement généré par : OpenAI. (2023). ChatGPT (version 3 août 2023) [Modèle massif de langage]. https://chat.openai.com/chat
 const PartieSchema: Schema = new Schema(
   {
     datePartie: {

@@ -16,6 +16,11 @@ async function obtenirTout(): Promise<IUtilisateur[]> {
   }
 }
 
+/**
+ * chercher un utilisateur selon son id
+ * @param id 
+ * @returns 
+ */
 async function chercherParId(id: string): Promise<IUtilisateur> {
   if (!mongoose.Types.ObjectId.isValid(id)) {
     throw new Error('ID de utilisateur invalide');
@@ -27,12 +32,23 @@ async function chercherParId(id: string): Promise<IUtilisateur> {
   return utilisateur;
 }
 
+/**
+ * fonction pour ajouter un utilisateur dans la bd
+ * @param utilisateur 
+ * @returns 
+ */
 async function ajouter(utilisateur: IUtilisateur): Promise<IUtilisateur> {
   const nouveauxUtilisateur = new Utilisateur(utilisateur);
   await nouveauxUtilisateur.save();
   return nouveauxUtilisateur;
 }
 
+/**
+ * fonction qui vérifie le mot de passe donné et le nom d'utilisateur donné dans la bd. 
+ * Renvoie vrai si le nom de user existe avec le mot de passe donné, sinon renvoie faux.
+ * @param utilisateur 
+ * @returns 
+ */
 async function verifierMdp(utilisateur: IUtilisateur): Promise<boolean> {
   try {
     const utilisateurTrouve = await Utilisateur.findOne({ nom: utilisateur.nom });
@@ -50,6 +66,11 @@ async function verifierMdp(utilisateur: IUtilisateur): Promise<boolean> {
   }
 }
 
+/**
+ * fonction pour supprimer un utilisateur selon sont id
+ * @param id 
+ * @returns 
+ */
 async function supprimer(id: string): Promise<{ message: string }> {
   if (!mongoose.Types.ObjectId.isValid(id)) {
     throw new Error('ID de utilisateur invalide');

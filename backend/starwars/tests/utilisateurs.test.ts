@@ -27,6 +27,7 @@ afterAll(async () => {
 
 describe('Tests des routes /api/utilisateurs', () => {
 
+    //test valide de post de utilisateur
     it('POST /api/utilisateurs/ajouter - devrait créer un utilisateur', async () => {
         const res = await request(app)
             .post('/api/utilisateurs/ajouter')
@@ -40,6 +41,7 @@ describe('Tests des routes /api/utilisateurs', () => {
         idUtilisateurCreee = res.body.utilisateur._id;
     });
 
+    //test invalide de post avec un champ vide
     it('POST /api/utilisateurs/ajouter - doit renvoyer un message que le champ est obligatoire', async () => {
         const utilisateurInvalide = { ...utilisateurValide, nom: "" };
         const res = await request(app)
@@ -50,6 +52,7 @@ describe('Tests des routes /api/utilisateurs', () => {
         expect(res.body.error).toContain("nom: Le nom de l’utilisateur est obligatoire.");
     });
 
+    //test invalide de poste avec un champ manquant
     it('POST /api/utilisateurs/ajouter - doit renvoyer un message que le champ est obligatoire', async () => {
         const res = await request(app)
             .post('/api/utilisateurs/ajouter')
@@ -59,6 +62,7 @@ describe('Tests des routes /api/utilisateurs', () => {
         expect(res.body.error).toContain("nom: Le nom de l’utilisateur est obligatoire.");
     });
 
+    //test valide de get de tout les utilisateurs
     it('GET /api/utilisateurs/all - devrait retourner touts les utilisateurs', async () => {
         const res = await request(app).get('/api/utilisateurs/all');
         expect(res.status).toBe(200);
@@ -66,20 +70,24 @@ describe('Tests des routes /api/utilisateurs', () => {
         expect(res.body.utilisateurs.length).toBeGreaterThanOrEqual(1);
     });
 
+    //test valide de get de l'utilisateur selon son id
     it('GET /api/utilisateurs/:id - devrait retourner l utilisateurs selon l id', async () => {
         const res = await request(app).get(`/api/utilisateurs/${idUtilisateurCreee}`);
         expect(res.status).toBe(200);
         expect(res.body.utilisateur._id).toContain(idUtilisateurCreee);
     });
 
+    //test invalide de delete avec un id invalide
     it('DELETE /api/utilisateurs/supprimer/:id - devrait retouner un erreur que le id est pas bon', async () => {
         const res = await request(app).delete(`/api/utilisateurs/supprimer/6888e68bb`);
         expect(res.status).toBe(404);
         expect(res.body.error).toContain("ID de utilisateur invalide");
     });
+
+    //test valide de delete
     it('DELETE /api/utilisateurs/supprimer/:id - devrait supprimer le deck', async () => {
         const res = await request(app).delete(`/api/utilisateurs/supprimer/${idUtilisateurCreee}`);
         expect(res.status).toBe(200);
-        expect(res.body.message).toMatch(/supprimé/i);
+        expect(res.body.message).toContain("supprimé");
     });
 });

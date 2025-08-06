@@ -1,0 +1,1 @@
+1. tirer le projet du GitHub (https://github.com/PHDfloppper/starwarsTCG)

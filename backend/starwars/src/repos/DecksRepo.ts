@@ -3,7 +3,7 @@ import decks from '../models/decks';
 import Deck, { IDeck } from '../models/decks'
 
 /**
- * fonction qui renvoie toute les cartes possibles
+ * fonction qui renvoie tout les decks possibles
  * @returns 
  */
 async function obtenirTout(): Promise<IDeck[]> {
@@ -16,6 +16,11 @@ async function obtenirTout(): Promise<IDeck[]> {
   }
 }
 
+/**
+ * fonction qui cherche un deck par id
+ * @param id 
+ * @returns 
+ */
 async function chercherParId(id: string): Promise<IDeck> {
   if (!mongoose.Types.ObjectId.isValid(id)) {
     throw new Error('ID de deck invalide');
@@ -27,12 +32,23 @@ async function chercherParId(id: string): Promise<IDeck> {
   return deck;
 }
 
+/**
+ * fonction pour ajouter un deck à la bd
+ * @param deck 
+ * @returns 
+ */
 async function ajouter(deck: IDeck): Promise<IDeck> {
   const nouveauDeck = new Deck(deck);
   await nouveauDeck.save();
   return nouveauDeck;
 }
 
+/**
+ * fonction pour modifier un deck selon son id
+ * @param id 
+ * @param deck 
+ * @returns 
+ */
 async function modifier(id: string, deck: IDeck): Promise<IDeck> {
   if (!mongoose.Types.ObjectId.isValid(id)) {
     throw new Error('ID de deck invalide');
@@ -54,6 +70,11 @@ async function modifier(id: string, deck: IDeck): Promise<IDeck> {
   return deckToUpdate;
 }
 
+/**
+ * fonction pour ajouter +1 aux victoires d'un deck selon l'id du deck
+ * @param id 
+ * @returns 
+ */
 async function ajouterVictoire(id: string): Promise<IDeck> {
   if (!mongoose.Types.ObjectId.isValid(id)) {
     throw new Error('ID de deck invalide');
@@ -69,6 +90,11 @@ async function ajouterVictoire(id: string): Promise<IDeck> {
   return deckToUpdate;
 }
 
+/**
+ * fonction pour supprimer un deck selon son id
+ * @param id 
+ * @returns 
+ */
 async function supprimer(id: string): Promise<{ message: string }> {
   if (!mongoose.Types.ObjectId.isValid(id)) {
     throw new Error('ID de deck invalide');

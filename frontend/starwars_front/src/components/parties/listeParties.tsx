@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import './ListeParties.css';
+import './Partie.css';
 
 type Partie = {
   _id: string;
@@ -24,27 +24,25 @@ const options: Intl.DateTimeFormatOptions = { //source: https://stackoverflow.co
 
 const ListeParties: React.FC = () => {
   const [parties, setParties] = useState<Partie[]>([]);
-  const [chargement, setChargement] = useState(true);
   const [erreur, setErreur] = useState<string | null>(null);
   const naviguer = useNavigate();
   const [recherche, setRecherche] = useState('');
   const [tri, setTri] = useState<'date-desc' | 'date-asc'>('date-desc');
-  const [decksFiltres, setDecksFiltre] = useState<Partie[]>([]);
+  const [partiesFiltres, setPartiesFiltre] = useState<Partie[]>([]);
 
-  const handleClique = async (deckId: string) => {
-    naviguer(`/partieDetails/${deckId}`);
+  const handleClique = async (partieId: string) => {
+    naviguer(`/partieDetails/${partieId}`);
   };
 
   /**
-   * useEffect qui récupère les decks selon l'utilisateur connecté au chargement de la page.
+   * useEffect qui récupère les parties selon l'utilisateur connecté au chargement de la page.
    */
   useEffect(() => {
-    const fetchDecks = async () => {
+    const obtenirParties = async () => {
       try {
         const utilisateur = localStorage.getItem('utilisateur');
         if (!utilisateur) {
           setErreur("utilisateur pas connecté");
-          setChargement(false);
           return;
         }
         const response = await axios.get('http://localhost:3000/api/parties/all');
@@ -53,20 +51,18 @@ const ListeParties: React.FC = () => {
           .filter(partie => partie.utilisateur === utilisateur)
           .map(partie => ({ ...partie, datePartie: new Date(partie.datePartie), }));
         setParties(partiesUtilisateur);
-        console.log("decks remplies");
+        console.log("parties remplies");
       } catch (err) {
         setErreur('Erreur lors de la récupération des parties.');
         console.error(err);
-      } finally {
-        setChargement(false);
       }
     };
 
-    fetchDecks();
+    obtenirParties();
   }, []);
 
   /**
-   * useEffect qui gère la recherche de deck par nom et le filtre des decks.
+   * useEffect qui gère la recherche de partie par nom de deck et le filtre des parties.
    */
   useEffect(() => {
     const partiesTrier = async () => {
@@ -82,23 +78,21 @@ const ListeParties: React.FC = () => {
           return 0;
         }
       }));
-      setDecksFiltre(tri_);
-      console.log("decks trié")
+      setPartiesFiltre(tri_);
+      console.log("partie trié")
     };
 
     partiesTrier();
   }, [recherche, tri, parties]);
 
-  if (chargement) return <p>Chargement...</p>;
-  if (erreur) return <p style={{ color: 'red' }}>{erreur}</p>;
-
   return (
     <div className="liste-decks-container">
+      <div className="background3"></div>
       <button className="retour-bouton" onClick={() => naviguer('/')}>
         Retour au menu
       </button>
-      <h2>Liste des Parties</h2>
-
+      <h2 className="text">Liste des Parties</h2>
+      {erreur && <p className="erreur">{erreur}</p>}
       <div style={{ marginBottom: '1rem' }}>
         <input
           type="text"
@@ -107,37 +101,37 @@ const ListeParties: React.FC = () => {
           onChange={(e) => setRecherche(e.target.value)}
         />
         <div style={{ marginBottom: '1rem' }}>
-          <label htmlFor="tri">Trier par : </label>
-          <select id="tri" value={tri} onChange={(e) => setTri(e.target.value as typeof tri)}>
+          <label className="text">Trier par : </label>
+          <select value={tri} onChange={(e) => setTri(e.target.value as typeof tri)}>
             <option value="date-desc">date (décroissant)</option>
             <option value="date-asc">date (croissant)</option>
           </select>
         </div>
-        <button onClick={() => naviguer('/ajouterPartie')}>
+        <button onClick={() => naviguer('/ajouterPartie')} className="text">
           Ajouter une partie
         </button>
       </div>
 
-      {decksFiltres.length === 0 ? (
-        <p>Aucune parties trouvé.</p>
+      {partiesFiltres.length === 0 ? (
+        <p className="text">Aucune parties trouvé.</p>
       ) : (
         <table className="deck-table">
           <thead>
             <tr>
-              <th>deck utilisé</th>
-              <th>date joué</th>
-              <th>résultat</th>
+              <th className="text">deck utilisé</th>
+              <th className="text">date joué</th>
+              <th className="text">résultat</th>
             </tr>
           </thead>
           <tbody>
-            {decksFiltres.map((deck) => (
-              <tr key={deck._id}>
-                <td>{deck.deckUtilise}</td>
+            {partiesFiltres.map((partie) => (
+              <tr key={partie._id}>
+                <td>{partie.deckUtilise}</td>
                 {/*source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString*/}
-                <td>{deck.datePartie.toLocaleString('fr-CA', options)}</td>
-                <td>{deck.resultat}</td>
+                <td>{partie.datePartie.toLocaleString('fr-CA', options)}</td>
+                <td>{partie.resultat}</td>
                 <td>
-                  <button onClick={() => handleClique(deck._id)}>Détail</button>
+                  <button onClick={() => handleClique(partie._id)} className="text">Détail</button>
                 </td>
               </tr>
             ))}

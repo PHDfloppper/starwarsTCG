@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import './ListeDecks.css';
+import './Decks.css';
 
 type CarteDansDeck = {
     numero: number;
@@ -26,6 +26,9 @@ const DetailsDeck: React.FC = () => {
     const [erreur, setErreur] = useState<string | null>(null);
     const naviguer = useNavigate();
 
+    /**
+     * useEffect qui fait une requete pour obtenir le deck selon son id
+     */
     useEffect(() => {
         const fetchDecks = async () => {
             try {
@@ -40,6 +43,9 @@ const DetailsDeck: React.FC = () => {
         fetchDecks();
     }, []);
 
+    /**
+     * fonction appelé avec un bouton qui envoie une requete pour supprimer un deck selon l'id
+     */
     const supprimerCarte = async () => {
         try {
             await axios.delete(`http://localhost:3000/api/decks/supprimer/${iddeck}`);
@@ -54,24 +60,25 @@ const DetailsDeck: React.FC = () => {
 
     return (
         <div>
+            <div className="background2"></div>
             <button className="retour-bouton" onClick={() => naviguer('/decks')}>
                 Retour aux decks
             </button>
             <h2>Détails du deck : {deck?.nom}</h2>
-            {erreur && <p>{erreur}</p>}
-            <button onClick={() => naviguer(`/modifierDeck/${iddeck}`)}>
+            {erreur && <p className='erreur'>{erreur}</p>}
+            <button onClick={() => naviguer(`/modifierDeck/${iddeck}`)} className='text'>
                 modifier
             </button>
-            <button type="button" onClick={supprimerCarte}>
+            <button type="button" onClick={supprimerCarte} className='text'>
                 Supprimer le deck
             </button>
-            <p><strong>Leader :</strong> {deck?.leader}</p>
-            <p><strong>Base :</strong> {deck?.base}</p>
-            <p><strong>Créateur :</strong> {deck?.createur}</p>
-            <p><strong>Victoires :</strong> {deck?.victoires}</p>
-            <p><strong>Description :</strong> {deck?.description}</p>
+            <p><strong className='text'>Leader :</strong> {deck?.leader}</p>
+            <p><strong className='text'>Base :</strong> {deck?.base}</p>
+            <p><strong className='text'>Créateur :</strong> {deck?.createur}</p>
+            <p><strong className='text'>Victoires :</strong> {deck?.victoires}</p>
+            <p><strong className='text'>Description :</strong> {deck?.description}</p>
 
-            <h3>Cartes dans le deck :</h3>
+            <h3 className='text'>Cartes dans le deck :</h3>
             <ul>
                 {deck?.cartes.map((carte, index) => (
                     <li key={index}>
@@ -80,7 +87,7 @@ const DetailsDeck: React.FC = () => {
                                 src={`https://api.swu-db.com/cards/twi/${carte.numero}?format=image`}
                                 className="carte-image"
                             />
-                            <p className="quantite-texte">Quantité : {carte.quantite}</p>
+                            <p className='text'>quantité : {carte.quantite}</p>
                         </div>
                     </li>
                 ))}

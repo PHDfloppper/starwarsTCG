@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import Partie, {IPartie} from '../models/parties'
 
 /**
- * fonction qui renvoie toute les cartes possibles
+ * fonction qui renvoie toute les parties possibles
  * @returns 
  */
 async function obtenirTout(): Promise<IPartie[]> {
@@ -15,6 +15,11 @@ async function obtenirTout(): Promise<IPartie[]> {
   }
 }
 
+/**
+ * fonction qui renvoie une partie selon son id
+ * @param id 
+ * @returns 
+ */
 async function chercherParId(id: string): Promise<IPartie> {
   if (!mongoose.Types.ObjectId.isValid(id)) {
     throw new Error('ID de partie invalide');
@@ -26,19 +31,30 @@ async function chercherParId(id: string): Promise<IPartie> {
   return partie;
 }
 
+/**
+ * fonction pour ajouter une partie à la bd
+ * @param partie 
+ * @returns 
+ */
 async function ajouter(partie: IPartie): Promise<IPartie> {
   const nouvellePartie = new Partie(partie);
   await nouvellePartie.save();
   return nouvellePartie;
 }
 
+/**
+ * fonction pour modifier une partie selon sont id
+ * @param id
+ * @param partie 
+ * @returns 
+ */
 async function modifier(id: string, partie: IPartie): Promise<IPartie> {
   if (!mongoose.Types.ObjectId.isValid(id)) {
-    throw new Error('ID de deck invalide');
+    throw new Error('ID de partie invalide');
   }
   const partieToUpdate = await Partie.findById(id);
   if (partieToUpdate === null) {
-    throw new Error('deck non trouvé');
+    throw new Error('partie non trouvé');
   }
 
   partieToUpdate.datePartie = partie.datePartie;
@@ -51,6 +67,11 @@ async function modifier(id: string, partie: IPartie): Promise<IPartie> {
   return partieToUpdate;
 }
 
+/**
+ * fonction pour supprimer une partie selon son id
+ * @param id 
+ * @returns 
+ */
 async function supprimer(id: string): Promise<{ message: string }> {
   if (!mongoose.Types.ObjectId.isValid(id)) {
     throw new Error('ID de partie invalide');

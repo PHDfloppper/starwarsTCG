@@ -12,7 +12,6 @@ type Carte = {
 
 const ListeCartes: React.FC = () => {
   const [cartes, setCartes] = useState<Carte[]>([]);
-  const [chargement, setChargement] = useState(true);
   const [erreur, setErreur] = useState<string | null>(null);
   const naviguer = useNavigate();
 
@@ -24,19 +23,15 @@ const ListeCartes: React.FC = () => {
       } catch (err) {
         setErreur('Erreur lors de la récupération des cartes.');
         console.error(err);
-      } finally {
-        setChargement(false);
       }
     };
 
     fetchCartes();
   }, []);
 
-  if (chargement) return <p>Chargement...</p>;
-  if (erreur) return <p style={{ color: 'red' }}>{erreur}</p>;
-
   return (
     <div className="liste-cartes-container">
+      <div className="background"></div>
       <button className="retour-bouton" onClick={() => naviguer('/')}>
         Retour au menu
       </button>
@@ -46,6 +41,7 @@ const ListeCartes: React.FC = () => {
         alt="Logo Set 3"
       />
       <h2 className="titre-liste">Liste des cartes</h2>
+      {erreur && <p>{erreur}</p>}
       <div className="cartes-grille">
         {cartes.map((carte) => (
           <div key={carte._id} className="carte-item">
@@ -54,7 +50,7 @@ const ListeCartes: React.FC = () => {
               alt={`Carte ${carte.nom}`}
               className="carte-image"
             />
-            <p>{carte.nom} ({carte.type})</p>
+            <p className="text">{(carte.nom.toLowerCase())} ({carte.type}, #{carte.numero})</p>
           </div>
         ))}
       </div>

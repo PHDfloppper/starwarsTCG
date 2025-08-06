@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import './ListeCartes.css';
+import './Utilisateurs.css';
 
 type Utilisateur = {
   nom: string;
@@ -11,15 +11,17 @@ type Utilisateur = {
 const Connexion: React.FC = () => {
   const [utilisateur, setUtilisateur] = useState<Utilisateur>({ nom: '', motDePasse: '' });
   const [erreur, setErreur] = useState<string | null>(null);
-  const [chargement, setChargement] = useState(false);
   const naviguer = useNavigate();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setUtilisateur({ ...utilisateur, [e.target.name]: e.target.value });
   };
 
+  /**
+   * gère la connexion de l'utilisateur quand il clique sur le bouton de connexion
+   * vérifie si c'est le bon mot de passe
+   */
   const handleConnexion = async () => {
-    setChargement(true);
     setErreur(null);
 
     try {
@@ -50,13 +52,12 @@ const Connexion: React.FC = () => {
       else {
         setErreur('Erreur lors de la connexion.');
       }
-    } finally {
-      setChargement(false);
     }
   };
 
   return (
     <div className="liste-cartes-container">
+      <div className="background"></div>
       <h2 className="titre-liste">Connexion</h2>
 
       <div className="formulaire-connexion">
@@ -76,11 +77,8 @@ const Connexion: React.FC = () => {
           onChange={handleChange}
           className="input-texte"
         />
-        <button onClick={handleConnexion} className="bouton-valider" disabled={chargement}>
-          {chargement ? 'Connexion...' : 'Se connecter'}
-        </button>
-
-        {erreur && <p style={{ color: 'red' }}>{erreur}</p>}
+        <button onClick={handleConnexion} className="text">Se connecter</button>
+        {erreur && <p className='erreur'>{erreur}</p>}
       </div>
     </div>
   );

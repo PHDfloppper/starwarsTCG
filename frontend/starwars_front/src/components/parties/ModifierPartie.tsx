@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
+import './Partie.css';
 
 type Partie = {
     _id: string;
@@ -59,7 +60,7 @@ const ModifPartie: React.FC = () => {
 
     /**
      * 
-     * fonction pour faire la requête de modification de deck
+     * fonction pour faire la requête de modification de partie
      */
     const handleAjout = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault(); //empêche la page de reload source: https://stackoverflow.com/questions/56562153/react-typescript-onsubmit-e-preventdefault-not-working
@@ -78,9 +79,6 @@ const ModifPartie: React.FC = () => {
 
             console.log(nouvellePartie);
             await axios.put(`http://localhost:3000/api/parties/modifier/${idPartie}`, nouvellePartie);
-            if (resultat == "victoire") {
-                await axios.put(`http://localhost:3000/api/decks/victoire/${deckUtilise?._id}`)
-            }
             setMessage('partie modifié avec succès !');
         } catch (err) {
             console.error(err);
@@ -103,13 +101,16 @@ const ModifPartie: React.FC = () => {
         }
     };
 
+    /**
+     * useEffect qui récupère la partie selon l'id pour afficher les données actuelles dans le formulaire
+     */
     useEffect(() => {
         const fetchParties = async () => {
             try {
                 const response = await axios.get(`http://localhost:3000/api/parties/${idPartie}`);
                 setPartie(response.data.parties);
             } catch (err) {
-                setErreur('Erreur lors de la récupération des decks.');
+                setErreur('Erreur lors de la récupération des partie.');
                 console.error(err);
             }
         };
@@ -117,6 +118,9 @@ const ModifPartie: React.FC = () => {
         fetchParties();
     }, []);
 
+    /**
+    * suite du précédant useEffect, affecte les données du deck dans les variables useState
+    */
     useEffect(() => {
 
         if (partie) {
@@ -131,22 +135,23 @@ const ModifPartie: React.FC = () => {
 
     return (
         <div className="ajout-deck-container">
+            <div className="background3"></div>
             <button className="retour-bouton" onClick={() => naviguer('/parties')}>
                 Retour aux parties
             </button>
-            <h2>Ajouter une nouvelle partie</h2>
+            <h2 className="text">Ajouter une nouvelle partie</h2>
             <form onSubmit={handleAjout}>
                 <div>
-                    <label>Date de la partie :</label>
+                    <label className="text">Date de la partie :</label>
                     <input
                         type="date"
-                        value={datePartie.split("T")[0]?? ''}
+                        value={datePartie.split("T")[0] ?? ''}
                         onChange={(e) => setdatePartie(e.target.value)}
                         required
                     />
                 </div>
                 <div>
-                    <label>deck utilisé :</label>
+                    <label className="text">deck utilisé :</label>
                     <select id="tri" value={deckUtilise?.nom ?? ''} onChange={(e) => getidDeckUtilise(e.target.value)}>
                         {decks.map((deck) => (
                             <option key={deck._id} value={deck.nom}>{deck.nom}</option>
@@ -154,25 +159,25 @@ const ModifPartie: React.FC = () => {
                     </select>
                 </div>
                 <div>
-                    <label>resultat :</label>
-                    <select id="tri" value={resultat?? ''} onChange={(e) => setresultat(e.target.value as typeof resultat)}>
+                    <label className="text">resultat :</label>
+                    <select id="tri" value={resultat ?? ''} onChange={(e) => setresultat(e.target.value as typeof resultat)}>
                         <option value="victoire">victoire</option>
                         <option value="défaite">défaite</option>
                     </select>
                 </div>
                 <div>
-                    <label>adversaire :</label>
-                    <input value={adversaire?? ''} onChange={(e) => setadversaire(e.target.value)} required />
+                    <label className="text">adversaire :</label>
+                    <input value={adversaire ?? ''} onChange={(e) => setadversaire(e.target.value)} required />
                 </div>
                 <div>
-                    <label>commentaires :</label>
-                    <input value={commentaires?? ''} onChange={(e) => setcommentaires(e.target.value)} required />
+                    <label className="text">commentaires :</label>
+                    <input value={commentaires ?? ''} onChange={(e) => setcommentaires(e.target.value)} required />
                 </div>
                 <hr />
-                <button type="submit">Modifier la partie</button>
+                <button type="submit" className="text">Modifier la partie</button>
             </form>
-            {message && <p>{message}</p>}
-            {erreur && <p>{erreur}</p>}
+            {message && <p className="erreur">{message}</p>}
+            {erreur && <p className="text">{erreur}</p>}
         </div>
     );
 };

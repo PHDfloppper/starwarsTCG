@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'StarJedi';
+  src: url('./fonts/Starjedi.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.text {
+  font-family: 'StarJedi';
+  color: #ffffff;
+}
+
 .liste-cartes-container {
   padding: 20px;
   position: relative;
@@ -16,6 +28,7 @@
 }
 
 .titre-liste {
+  font-family: 'StarJedi';
   margin-top: 50px;
 }
 
@@ -34,4 +47,15 @@
   height: auto;
   border: 1px solid #ccc;
   border-radius: 8px;
+}
+
+.background {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('https://www.stompinggroundstcg.com/cdn/shop/collections/Star_Wars_Unlimited_Collection_Banner.webp?v=1722208792');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(1);
+  z-index: -1;
 }

@@ -1,0 +1,40 @@
+emplacement des tests: backend/starwars/tests/
+
+-cartes.test
+	-GET /api/cartes/all - doit retourner tout les cartes
+
+-decks.test
+	-POST /api/decks/ajouter - devrait créer un deck
+	-POST /api/decks/ajouter - test qui envoie deck avec champ vide, doit retourner une erreur
+	-POST /api/decks/ajouter - test qui envoie un deck avec un deck manquant, doit retourner une erreur
+	-POST /api/decks/ajouter - test qui envoie un deck avec le champ victoire pas au bon format, doit renvoyer une erreur
+	-GET /api/decks/all - test qui doit retourner tout les decks
+	-GET /api/decks/:id - devrait retourner le bon deck selon l'id envoyé
+	-PUT /api/parties/modifier/:id - devrait modifier un deck existant et renvoyer la version modifié
+	-PUT /api/decks/modifier/:id - essaye de modifier un deck avec un champ manquant, 
+	-PUT /api/decks/modifier/:id - test qui essaye de faire une modification en envoyer un id invalide, devrait renvoyer une erreur
+	-DELETE /api/decks/supprimer/:id - devrait retouner un erreur que le id est pas bon
+	-DELETE /api/decks/supprimer/:id - devrait supprimer le deck et renvoyer un message de confirmation
+
+-parties.test
+	-POST /api/parties/ajouter - devrait créer une partie
+	-POST /api/parties/ajouter - test qui envoie une partie avec champ vide, doit retourner une erreur
+	-POST /api/parties/ajouter - test qui envoie une partie avec un deck manquant, doit retourner une erreur
+	-POST /api/parties/ajouter - test qui envoie une partie avec le champ date pas au bon format, doit renvoyer une erreur
+	-GET /api/parties/all - devrait retourner toutes les parties
+	-GET /api/parties/:id - devrait retourner la partie selon l'id
+	-PUT /api/parties/modifier/:id - devrait modifier une partie existante selon l'id de la partie existante et renvoyer la partie modifié
+	-PUT /api/parties/modifier/:id - devrait renvoyer un message d'erreur de message manquant
+	-PUT /api/parties/modifier/:id - test qui modifie une partie avec un champ de date au mauvais format, doit renvoyer une erreur
+	-PUT /api/parties/modifier/:id - test qui essaye de faire une modification avec le mauvais id, doit renvoyer une erreur
+	-DELETE /api/parties/supprimer/:id - test qui essaye de supprimer une partie avec un mauvais id, doit renvoyer une erreur
+	-DELETE /api/parties/supprimer/:id - devrait supprimer la partie et renvoyer un message de confirmation
+
+-utilisateur.test
+	-POST /api/utilisateurs/ajouter - devrait créer un utilisateur
+	-POST /api/utilisateurs/ajouter - test qui envoie un utilisateur avec champ vide, doit retourner une erreur
+	-POST /api/utilisateurs/ajouter - test qui envoie un utilisateur avec un champ manquant, doit retourner une erreur
+	-GET /api/utilisateurs/all - devrait retourner touts les utilisateurs
+	-GET /api/utilisateurs/:id - devrait retourner l'utilisateur selon l'id
+	-DELETE /api/utilisateurs/supprimer/:id - test qui essaye de delete avec un id invalide, doit retourner une erreur
+	-DELETE /api/utilisateurs/supprimer/:id - test qui delete un deck selon son id, doit retourner un message de confirmation 

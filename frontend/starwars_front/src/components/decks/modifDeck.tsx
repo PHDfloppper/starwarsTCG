@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { data, useNavigate, useParams } from 'react-router-dom';
+import {useNavigate, useParams } from 'react-router-dom';
+import './Decks.css';
 
 type CarteDansDeck = {
     numero: number;
@@ -34,10 +35,14 @@ const ModifDeck: React.FC = () => {
     const [erreur, setErreur] = useState<string | null>(null);
     const [deck, setDeck] = useState<Deck>();
 
+    /**
+     * fonction pour ajouter une carte au tableau de carte si elle respecte les condition (le numéro de carte doit être entre 0 et 238)
+     * @returns
+     */
     const ajouterCarte = () => {
         if (numeroCarte <= 0 || quantiteCarte <= 0) return;
 
-        if (numeroCarte > 237) {
+        if (numeroCarte > 238) {
             setMessage('le numéro de carte ne peut pas dépasser 237');
             return;
         }
@@ -53,6 +58,7 @@ const ModifDeck: React.FC = () => {
         setMessage('');
     };
 
+    //fonction de modification d'un deck, appelé quand le form est envoyé 
     const handleAjout = async (e: React.FormEvent) => {
         e.preventDefault();
 
@@ -77,6 +83,9 @@ const ModifDeck: React.FC = () => {
         }
     };
 
+    /**
+     * useEffect qui récupère le deck selon l'id pour afficher les données actuelles dans le formulaire
+     */
     useEffect(() => {
         const fetchDecks = async () => {
             try {
@@ -91,6 +100,9 @@ const ModifDeck: React.FC = () => {
         fetchDecks();
     }, []);
 
+    /**
+     * suite du précédant useEffect, affecte les données du deck dans les variables useState
+     */
     useEffect(() => {
 
         if (deck) {
@@ -107,29 +119,30 @@ const ModifDeck: React.FC = () => {
 
     return (
         <div className="ajout-deck-container">
+            <div className="background2"></div>
             <button className="retour-bouton" onClick={() => naviguer('/decks')}>
                 Retour aux decks
             </button>
-            <h2>Modifier le deck</h2>
+            <h2 className='text'>Modifier le deck</h2>
             <form onSubmit={handleAjout}>
                 <div>
-                    <label>Nom du deck :</label>
+                    <label className='text'>Nom du deck :</label>
                     <input value={nom} onChange={(e) => setNom(e.target.value)} required />
                 </div>
                 <div>
-                    <label>Description :</label>
+                    <label className='text'>Description :</label>
                     <textarea value={description} onChange={(e) => setDescription(e.target.value)} />
                 </div>
                 <div>
-                    <label>Leader :</label>
+                    <label className='text'>Leader :</label>
                     <input value={leader} onChange={(e) => setLeader(e.target.value)} required />
                 </div>
                 <div>
-                    <label>Base :</label>
+                    <label className='text'>Base :</label>
                     <input value={base} onChange={(e) => setBase(e.target.value)} required />
                 </div>
-                <h4>Ajouter une carte</h4>
-                <label>Numéro de carte :</label>
+                <h4 className='text'>Ajouter une carte</h4>
+                <label className='text'>Numéro de carte :</label>
                 <input
                     type="number"
                     min={1}
@@ -139,7 +152,7 @@ const ModifDeck: React.FC = () => {
                     placeholder="ex: 120"
                 />
 
-                <label>Quantité :</label>
+                <label className='text'>Quantité :</label>
                 <input
                     type="number"
                     min={1}
@@ -148,13 +161,13 @@ const ModifDeck: React.FC = () => {
                     onChange={(e) => setQuantiteCarte(parseInt(e.target.value))}
                 />
 
-                <button type="button" onClick={ajouterCarte}>
+                <button type="button" onClick={ajouterCarte} className='text'>
                     Ajouter carte
                 </button>
 
                 {cartes.length > 0 && (
                     <div style={{ marginTop: '1rem' }}>
-                        <h5>Cartes ajoutées :</h5>
+                        <h5 className='text'>Cartes ajoutées :</h5>
                         <ul>
                             {cartes.map((c, index) => (
                                 <li key={index}>
@@ -166,10 +179,10 @@ const ModifDeck: React.FC = () => {
                 )}
 
                 <hr />
-                <button type="submit">Modifier le deck</button>
+                <button type="submit" className='text'>Modifier le deck</button>
             </form>
-            {message && <p>{message}</p>}
-            {erreur && <p>{erreur}</p>}
+            {message && <p className='text'>{message}</p>}
+            {erreur && <p className='erreur'>{erreur}</p>}
         </div>
     );
 };

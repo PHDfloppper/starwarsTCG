@@ -13,6 +13,7 @@ afterAll(async () => {
 
 describe('Tests des routes /api/cartes', () => {
 
+    //test qui récupère toute les cartes
     it('GET /api/cartes/all - devrait retourner toutes les cartes', async () => {
         const res = await request(app).get('/api/cartes/all');
         expect(res.status).toBe(200);

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import './Decks.css';
 
 interface CarteDeck {
     numero: number;
@@ -16,6 +17,7 @@ const AjoutDeck: React.FC = () => {
     const [quantiteCarte, setQuantiteCarte] = useState(1);
     const [cartes, setCartes] = useState<CarteDeck[]>([]);
     const [message, setMessage] = useState('');
+    const [erreur, setErreur] = useState('');
     const naviguer = useNavigate();
 
     /**
@@ -25,8 +27,8 @@ const AjoutDeck: React.FC = () => {
     const ajouterCarte = () => {
         if (numeroCarte <= 0 || quantiteCarte <= 0) return;
 
-        if (numeroCarte > 237) {
-            setMessage('le numéro de carte ne peut pas dépasser 237');
+        if (numeroCarte > 238) {
+            setErreur('le numéro de carte ne peut pas dépasser 237');
             return;
         }
 
@@ -39,6 +41,7 @@ const AjoutDeck: React.FC = () => {
         setNumeroCarte(1);
         setQuantiteCarte(1);
         setMessage('');
+        setErreur('');
     };
 
     /**
@@ -64,35 +67,38 @@ const AjoutDeck: React.FC = () => {
             setMessage('Deck ajouté avec succès !');
         } catch (err) {
             console.error(err);
-            setMessage('Erreur lors de l’ajout du deck.');
+            setErreur('Erreur lors de l’ajout du deck.');
         }
     };
 
+
+
     return (
         <div className="ajout-deck-container">
+            <div className="background2"></div>
             <button className="retour-bouton" onClick={() => naviguer('/decks')}>
                 Retour aux decks
             </button>
-            <h2>Ajouter un nouveau deck</h2>
+            <h2 className="text">Ajouter un nouveau deck</h2>
             <form onSubmit={handleAjout}>
                 <div>
-                    <label>Nom du deck :</label>
+                    <label className="text">Nom du deck :</label>
                     <input value={nom} onChange={(e) => setNom(e.target.value)} required />
                 </div>
                 <div>
-                    <label>Description :</label>
+                    <label className="text">Description :</label>
                     <textarea value={description} onChange={(e) => setDescription(e.target.value)} />
                 </div>
                 <div>
-                    <label>Leader :</label>
+                    <label className="text">Leader :</label>
                     <input value={leader} onChange={(e) => setLeader(e.target.value)} required />
                 </div>
                 <div>
-                    <label>Base :</label>
+                    <label className="text">Base :</label>
                     <input value={base} onChange={(e) => setBase(e.target.value)} required />
                 </div>
-                <h4>Ajouter une carte</h4>
-                <label>Numéro de carte :</label>
+                <h4 className="text">Ajouter une carte</h4>
+                <label className="text">Numéro de carte :</label>
                 <input
                     type="number"
                     min={1}
@@ -102,7 +108,7 @@ const AjoutDeck: React.FC = () => {
                     placeholder="ex: 120"
                 />
 
-                <label>Quantité :</label>
+                <label className="text">quantité :</label>
                 <input
                     type="number"
                     min={1}
@@ -111,7 +117,7 @@ const AjoutDeck: React.FC = () => {
                     onChange={(e) => setQuantiteCarte(parseInt(e.target.value))}
                 />
 
-                <button type="button" onClick={ajouterCarte}>
+                <button className="text" type="button" onClick={ajouterCarte}>
                     Ajouter carte
                 </button>
 
@@ -129,9 +135,10 @@ const AjoutDeck: React.FC = () => {
                 )}
 
                 <hr />
-                <button type="submit">Ajouter le deck</button>
+                <button type="submit" className="text">Ajouter le deck</button>
             </form>
-            {message && <p>{message}</p>}
+            {message && <p className="text">{message}</p>}
+            {erreur && <p className="erreur">{erreur}</p>}
         </div>
     );
 };

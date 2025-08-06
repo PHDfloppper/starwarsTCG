@@ -1,29 +1,33 @@
-import { useState } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import ListeCartes from './components/listeCarte';
-import ListeDecks from './components/decks/listeDecks';
-import ListeParties from './components/parties/listeParties';
+import ListeDecks from './components/decks/ListeDecks';
+import ListeParties from './components/parties/ListeParties';
 import Connexion from './components/utilisateur/connexion';
-import DetailsDeck from './components/decks/detailsDeck';
+import DetailsDeck from './components/decks/DetailsDeck';
 import AjoutDeck from './components/decks/ajoutDeck';
-import ModifDeck from './components/decks//modifDeck';
-import AjoutPartie from './components/parties/ajoutPartie';
-import DetaisPartie from './components/parties/detailsPartie';
+import ModifDeck from './components/decks/ModifDeck';
+import AjoutPartie from './components/parties/AjoutPartie';
+import DetaisPartie from './components/parties/DetailsPartie';
 import ModifPartie from './components/parties/ModifierPartie';
 import AjoutUtilisateur from './components/utilisateur/ajoutUtilisateur';
 
 function Home() {
 
-
+  /**
+   * fonction qui déconnecte l'utilisateur
+   */
   const handleClique = async () => {
     localStorage.setItem('utilisateur', "");
     window.location.reload();
   };
+  
   const nomUser = localStorage.getItem('utilisateur'); //source: https://www.w3schools.com/jsref/prop_win_localstorage.asp
 
   return (
-    <>
+    
+    <div className="App">
+      <div className="background"></div>
       <div className="logo-container">
         <a href="https://starwarsunlimited.com/fr" target="_blank" rel="noreferrer">
           <img
@@ -43,32 +47,33 @@ function Home() {
       <div className="logo-container">
         {nomUser ? (
           <div>
-            <p>Connecté en tant que <strong>{nomUser}</strong></p>
-            <button onClick={handleClique}>Déconnexion</button>
+            <p className="text">connecté en tant que <strong>{nomUser}</strong></p>
+            <button className="text" onClick={handleClique}>déconnexion</button>
           </div>
         ) : (
           <div>
             <Link to="/connexion">
-              <button>Connexion</button>
+              <button className="text">connexion</button>
             </Link>
             <Link to="/ajoutUtilisateur">
-              <button>Création de compte</button>
+              <button className="text">création de compte</button>
             </Link>
           </div>
         )}
         <Link to="/decks">
-          <button>Voir les decks</button>
+          <button className="text">voir les decks</button>
         </Link>
         <Link to="/parties">
-          <button>Voir les parties</button>
+          <button className="text">voir les parties</button>
         </Link>
       </div>
-    </>
+    </div>
   );
 }
 
 function App() {
 
+  //toute les routes du router
   return (
     <BrowserRouter>
       <Routes>

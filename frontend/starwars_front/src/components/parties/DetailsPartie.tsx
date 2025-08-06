@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import './ListeParties.css';
+import './Partie.css';
 
 type Partie = {
   _id: string;
@@ -63,23 +63,24 @@ const DetaisPartie: React.FC = () => {
 
     return (
         <div>
+            <div className="background3"></div>
             <button className="retour-bouton" onClick={() => naviguer('/parties')}>
                 Retour aux parties
             </button>
-            <h2>Détails de la partie</h2>
-            {erreur && <p>{erreur}</p>}
-            <button onClick={() => naviguer(`/modifierPartie/${idPartie}`)}>
+            <h2 className="text">Détails de la partie</h2>
+            {erreur && <p className="erreur">{erreur}</p>}
+            <button onClick={() => naviguer(`/modifierPartie/${idPartie}`)} className="text">
                 modifier
             </button>
-            <button type="button" onClick={supprimerCarte}>
+            <button type="button" onClick={supprimerCarte} className="text">
                 Supprimer la partie
             </button>
-            <p><strong>aversaire : :</strong> {partie?.adversaire}</p>
-            <p><strong>commentaires :</strong> {partie?.commentaires}</p>
-            <p><strong>date joué :</strong> {partie?.datePartie.toLocaleString('fr-CA',options)}</p>
-            <p><strong>deck utilisé :</strong> {partie?.deckUtilise}</p>
-            <p><strong>resultat :</strong> {partie?.resultat}</p>
-            <p><strong>utilisateur :</strong> {partie?.utilisateur}</p>
+            <p><strong className="text">aversaire : :</strong> {partie?.adversaire}</p>
+            <p><strong className="text">commentaires :</strong> {partie?.commentaires}</p>
+            <p><strong className="text">date joué :</strong> {partie?.datePartie.toLocaleString('fr-CA',options)}</p>
+            <p><strong className="text">deck utilisé :</strong> {partie?.deckUtilise}</p>
+            <p><strong className="text">resultat :</strong> {partie?.resultat}</p>
+            <p><strong className="text">utilisateur :</strong> {partie?.utilisateur}</p>
         </div>
     );
 };

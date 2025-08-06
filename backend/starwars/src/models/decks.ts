@@ -15,6 +15,7 @@ export interface IDeck extends Document {
   cartes: CarteDansDeck[];
 }
 
+//schema partiellement généré par : OpenAI. (2023). ChatGPT (version 3 août 2023) [Modèle massif de langage]. https://chat.openai.com/chat
 const CarteDansDeckSchema: Schema = new Schema({
   numero: { 
     type: Number, 

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import './ListeDecks.css';
+import './Decks.css';
 
 type Deck = {
   _id: string;
@@ -14,7 +14,6 @@ type Deck = {
 
 const ListeDecks: React.FC = () => {
   const [decks, setDecks] = useState<Deck[]>([]);
-  const [chargement, setChargement] = useState(true);
   const [erreur, setErreur] = useState<string | null>(null);
   const naviguer = useNavigate();
   const [recherche, setRecherche] = useState('');
@@ -34,7 +33,6 @@ const ListeDecks: React.FC = () => {
         const utilisateur = localStorage.getItem('utilisateur');
         if (!utilisateur) {
           setErreur("utilisateur pas connecté");
-          setChargement(false);
           return;
         }
         const response = await axios.get('http://localhost:3000/api/decks/all');
@@ -45,8 +43,6 @@ const ListeDecks: React.FC = () => {
       } catch (err) {
         setErreur('Erreur lors de la récupération des decks.');
         console.error(err);
-      } finally {
-        setChargement(false);
       }
     };
 
@@ -80,46 +76,44 @@ const ListeDecks: React.FC = () => {
     decksTrier();
   }, [recherche, tri, decks]);
 
-  if (chargement) return <p>Chargement...</p>;
-  if (erreur) return <p style={{ color: 'red' }}>{erreur}</p>;
-
   return (
     <div className="liste-decks-container">
+      <div className="background2"></div>
       <button className="retour-bouton" onClick={() => naviguer('/')}>
         Retour au menu
       </button>
-      <h2>Liste des decks</h2>
-
-      <div style={{ marginBottom: '1rem' }}>
+      <h2 className='text'>Liste des decks</h2>
+      {erreur && <p className='erreur'>{erreur}</p>}
+      <div>
         <input
           type="text"
           placeholder="Rechercher par nom"
           value={recherche}
           onChange={(e) => setRecherche(e.target.value)}
         />
-        <div style={{ marginBottom: '1rem' }}>
-          <label htmlFor="tri">Trier par : </label>
-          <select id="tri" value={tri} onChange={(e) => setTri(e.target.value as typeof tri)}>
+        <div>
+          <label className='text'>Trier par : </label>
+          <select value={tri} onChange={(e) => setTri(e.target.value as typeof tri)}>
             <option value="nom">Nom (A-Z)</option>
             <option value="victoires-desc">Victoires (décroissant)</option>
             <option value="victoires-asc">Victoires (croissant)</option>
           </select>
         </div>
-        <button onClick={() => naviguer('/ajouterDeck')}>
+        <button onClick={() => naviguer('/ajouterDeck')} className='text'>
           Ajouter un deck
         </button>
       </div>
 
       {decksFiltres.length === 0 ? (
-        <p>Aucun deck trouvé.</p>
+        <p className='text'>Aucun deck trouvé.</p>
       ) : (
         <table className="deck-table">
           <thead>
             <tr>
-              <th>Nom</th>
-              <th>Leader</th>
-              <th>Base</th>
-              <th>victoires</th>
+              <th className='text'>Nom</th>
+              <th className='text'>Leader</th>
+              <th className='text'>Base</th>
+              <th >victoires</th>
             </tr>
           </thead>
           <tbody>
@@ -130,7 +124,7 @@ const ListeDecks: React.FC = () => {
                 <td>{deck.base}</td>
                 <td>{deck.victoires}</td>
                 <td>
-                  <button onClick={() => handleClique(deck._id)}>Détail</button>
+                  <button onClick={() => handleClique(deck._id)} className='text'>Détail</button>
                 </td>
               </tr>
             ))}
